@@ -1,0 +1,1688 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>茶々○園 事業計画書</title>
+<meta name="description" content="押上・東京ソラマチ徒歩30秒。日本茶で「第二のスタバ」をめざす、日本茶専門店「茶々○園」の事業計画書（2026年11月版）。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4a31'/%3E%3Cpath d='M44 16a20 20 0 1 0 6 10' fill='none' stroke='%23f3ecd8' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f2e9; --surface:#fffdf8; --surface-2:#f0eadc; --surface-3:#e9e2d1;
+  --ink:#1f2a22; --ink-2:#4b554d; --muted:#767c72; --line:#e3dccb; --line-2:#cfc6b2;
+  --brand:#2e6b45; --brand-deep:#1d4a31; --brand-wash:#e5eedc; --on-brand:#f3ecd8;
+  --accent:#b4462c; --accent-wash:#f7e5dc;
+  --s0:#8b8f86; --s1:#2e7d4f; --s2:#c99400; --s3:#3d63b8; --s4:#c8662b;
+  --pos:#2e7d4f; --neg:#c0442b; --pos-wash:#e3efe2; --neg-wash:#f8e6df;
+  --grid:#e8e2d3; --axis:#bdb5a1;
+  --c1:#cfc8b8; --c2:#b3ab9a; --c3:#968e7e; --c4:#7a7365;
+  --shadow:0 1px 2px rgba(30,40,30,.05),0 6px 20px rgba(30,40,30,.06);
+  --radius:14px;
+  --sans:"Noto Sans JP",system-ui,-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic UI",sans-serif;
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#111410; --surface:#1b1d19; --surface-2:#22261f; --surface-3:#2a2f27;
+    --ink:#ecebe4; --ink-2:#c4c6bb; --muted:#929889; --line:#30352d; --line-2:#3e4539;
+    --brand:#7cc79a; --brand-deep:#163a26; --brand-wash:#1c2b20; --on-brand:#f3ecd8;
+    --accent:#e58b6e; --accent-wash:#3a231b;
+    --s0:#7d8278; --s1:#2b8a63; --s2:#b8860b; --s3:#6b8de0; --s4:#d06a2c;
+    --pos:#3aa877; --neg:#e0694f; --pos-wash:#1c2d22; --neg-wash:#352019;
+    --grid:#2a2e27; --axis:#4a5145;
+    --c1:#5a5d55; --c2:#6c7066; --c3:#80847a; --c4:#969a8f;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;letter-spacing:.01em;overflow-x:hidden}
+a{color:var(--brand)}
+img,svg{max-width:100%}
+h1,h2,h3,h4{line-height:1.4;margin:0;text-wrap:balance}
+.hero .sub,.sec-h .lead{text-wrap:balance}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin:.2em 0}
+strong{font-weight:700}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:1240px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--serif);font-weight:800;font-size:19px;letter-spacing:.06em}
+.logo svg{width:30px;height:30px;flex:none}
+.topbar .doc{font-size:12px;color:var(--muted);border-left:1px solid var(--line-2);padding-left:12px}
+.topbar .grow{flex:1}
+.toc-btn{display:none;font:inherit;font-size:14px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:var(--brand);width:0}
+
+/* ---------- hero ---------- */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#2f6b47 0,transparent 60%),linear-gradient(160deg,#1d4a31,#163a26 60%,#12301f);color:var(--on-brand);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 48px);pointer-events:none}
+.hero-in{max-width:1240px;margin:0 auto;padding:64px 16px 120px;position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;gap:10px;align-items:center;font-size:13px;letter-spacing:.12em;opacity:.85;margin-bottom:18px}
+.eyebrow span{border:1px solid rgba(243,236,216,.35);border-radius:999px;padding:2px 12px}
+.hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(48px,8vw,92px);letter-spacing:.08em;line-height:1.1;margin-bottom:14px}
+.hero .sub{font-family:var(--serif);font-size:clamp(20px,2.6vw,28px);font-weight:600;margin-bottom:22px}
+.hero .desc{max-width:36em;opacity:.88;font-size:15.5px}
+.tag-card{background:#f3ecd8;color:#1d2a22;border-radius:18px;padding:30px 28px;box-shadow:0 20px 50px rgba(0,0,0,.25);transform:rotate(-1.2deg);position:relative}
+.tag-card .jp{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.2vw,38px);line-height:1.35;letter-spacing:.06em}
+.tag-card .en{margin-top:14px;font-weight:700;letter-spacing:.14em;font-size:13px;color:#2e6b45}
+.tag-card .note{margin-top:14px;font-size:12.5px;color:#5a5f57;border-top:1px dashed #cdbf9e;padding-top:12px;line-height:1.7}
+.tag-card .stamp{position:absolute;right:18px;top:-16px;background:#b4462c;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;transform:rotate(4deg)}
+
+.kpis{max-width:1240px;margin:-80px auto 0;padding:0 16px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;box-shadow:var(--shadow)}
+.kpi .k{font-size:12.5px;color:var(--muted);font-weight:500}
+.kpi .v{font-size:26px;font-weight:700;letter-spacing:.01em;line-height:1.3;margin-top:4px}
+.kpi .v small{font-size:14px;font-weight:500;margin-left:2px}
+.kpi .h{font-size:12px;color:var(--ink-2);margin-top:4px;line-height:1.55}
+
+/* ---------- layout ---------- */
+.layout{max-width:1240px;margin:0 auto;padding:40px 16px 80px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:48px}
+.toc{position:sticky;top:76px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;font-size:13.5px;padding-right:6px}
+.toc .t{font-size:12px;color:var(--muted);letter-spacing:.12em;margin:4px 0 10px}
+.toc ol{list-style:none;padding:0;margin:0;counter-reset:toc}
+.toc li{margin:0}
+.toc a{display:flex;gap:10px;padding:6px 10px;border-radius:8px;color:var(--ink-2);text-decoration:none;line-height:1.5}
+.toc a .n{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px;padding-top:1px;min-width:18px}
+.toc a:hover{background:var(--surface-2);color:var(--ink)}
+.toc a.on{background:var(--brand-wash);color:var(--ink);font-weight:700}
+.toc a.on .n{color:var(--brand)}
+main{min-width:0}
+
+.guide{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px dashed var(--line-2);border-radius:var(--radius);padding:16px 18px;font-size:14.5px;color:var(--ink-2);margin-bottom:12px}
+.guide b{color:var(--ink)}
+.guide .ic{flex:none;width:30px;height:30px;border-radius:50%;background:var(--brand-wash);color:var(--brand);display:grid;place-items:center;font-weight:700}
+
+/* ---------- sections ---------- */
+.sec{padding:56px 0 8px;border-top:1px solid var(--line);margin-top:40px}
+.sec:first-of-type{border-top:0;margin-top:0;padding-top:24px}
+.sec-h{margin-bottom:26px}
+.sec-h .num{font-family:var(--serif);font-weight:800;color:var(--brand);font-size:15px;letter-spacing:.2em;display:block;margin-bottom:4px}
+.sec-h h2{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.4vw,34px);letter-spacing:.04em}
+.sec-h .lead{margin-top:10px;color:var(--ink-2);font-size:16px;max-width:44em}
+h3{font-size:19px;font-weight:700;margin:34px 0 14px;display:flex;align-items:center;gap:10px}
+h3::before{content:"";width:6px;height:20px;border-radius:3px;background:var(--brand);flex:none}
+h4{font-size:15.5px;font-weight:700;margin:0 0 6px}
+
+.point{background:var(--brand-wash);border-radius:var(--radius);padding:18px 20px 16px;margin:0 0 26px;position:relative}
+.point .lb{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--brand);margin-bottom:6px}
+.point ul{margin:0}
+.point li{margin:.15em 0}
+.warn{background:var(--accent-wash);border-radius:var(--radius);padding:16px 20px;margin:18px 0;font-size:15px}
+.warn .lb{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent);margin-bottom:4px}
+.note{font-size:13px;color:var(--muted);line-height:1.7}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.pill.g{background:var(--brand-wash);color:var(--brand)}
+.pill.r{background:var(--accent-wash);color:var(--accent)}
+
+/* term links */
+a.t{color:inherit;text-decoration:underline dotted;text-decoration-color:var(--brand);text-underline-offset:4px;text-decoration-thickness:2px;cursor:help}
+a.t:hover{color:var(--brand)}
+.term-tip{position:fixed;z-index:80;max-width:320px;background:var(--ink);color:var(--bg);font-size:13px;line-height:1.65;padding:10px 12px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);pointer-events:none;opacity:0;transition:opacity .12s}
+.term-tip b{display:block;font-size:13.5px;margin-bottom:2px}
+.term-tip i{display:block;font-style:normal;opacity:.7;font-size:11.5px;margin-top:4px}
+.back-btn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--brand);color:#fff;border:0;border-radius:999px;padding:10px 16px;font:inherit;font-size:14px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.2);cursor:pointer;display:none}
+@media (prefers-color-scheme: dark){.back-btn{color:#0f1a12}}
+
+/* ---------- summary ---------- */
+.summary{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.summary .row{display:grid;grid-template-columns:176px 1fr;border-top:1px solid var(--line)}
+.summary .q{white-space:nowrap}
+.summary .row:first-child{border-top:0}
+.summary .q{background:var(--surface-2);padding:16px 18px;font-weight:700;display:flex;align-items:center;gap:10px}
+.summary .q .qi{width:28px;height:28px;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-size:13px;flex:none;font-family:var(--serif)}
+.summary .a{padding:16px 20px}
+.verdict{display:flex;gap:18px;align-items:center;margin-top:16px;padding:18px 20px;border-radius:var(--radius);background:var(--surface);border:2px solid var(--brand)}
+.verdict .badge{flex:none;font-family:var(--serif);font-weight:800;font-size:20px;color:var(--on-brand);background:var(--brand-deep);border-radius:12px;padding:10px 16px;text-align:center;line-height:1.3}
+.verdict .badge small{display:block;font-family:var(--sans);font-size:11px;font-weight:500;opacity:.85;letter-spacing:.1em}
+
+/* ---------- why flow ---------- */
+.why{display:grid;gap:12px}
+.why-row{display:grid;grid-template-columns:1fr 28px 1.2fr 28px 1.2fr;align-items:stretch;gap:6px}
+.why-cell{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14.5px;line-height:1.7}
+.why-cell .lb{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--muted);display:block;margin-bottom:4px}
+.why-cell.start{background:var(--surface-2)}
+.why-cell.start .q{font-family:var(--serif);font-weight:800;font-size:17px}
+.why-cell.ans{border-color:var(--brand);background:var(--brand-wash)}
+.why-cell.ans .lb{color:var(--brand)}
+.arrow{display:grid;place-items:center;color:var(--line-2)}
+.arrow svg{width:22px;height:22px}
+.why-head{display:grid;grid-template-columns:1fr 28px 1.2fr 28px 1.2fr;gap:6px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.1em;padding:0 4px}
+.why-head span:nth-child(2n){visibility:hidden}
+
+/* ---------- stats ---------- */
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 14px;display:flex;flex-direction:column}
+.stat .v{font-size:30px;font-weight:700;line-height:1.25;letter-spacing:.01em}
+.stat .v small{font-size:15px;font-weight:500;margin-left:2px}
+.stat .k{font-size:13px;color:var(--muted);font-weight:500;margin-bottom:4px}
+.stat .d{font-size:13.5px;color:var(--ink-2);margin-top:6px;line-height:1.65;flex:1}
+.stat .src{font-size:11.5px;color:var(--muted);margin-top:10px}
+.stat .src a{color:var(--muted)}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch}
+.vs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.meter{height:14px;border-radius:7px;background:var(--surface-3);overflow:hidden;margin:10px 0 4px}
+.meter span{display:block;height:100%;border-radius:7px}
+
+/* ---------- personas ---------- */
+.persona{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px}
+.persona .top{display:flex;gap:12px;align-items:center}
+.persona .av{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-weight:800;font-size:22px;color:#fff;flex:none}
+.persona .nm{font-weight:700;font-size:16px;line-height:1.4}
+.persona .meta{font-size:12.5px;color:var(--muted)}
+.persona dl{margin:0;font-size:14px;display:grid;gap:6px}
+.persona dt{font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.1em}
+.persona dd{margin:0;line-height:1.65}
+.persona.future{border-style:dashed;background:transparent}
+
+/* ---------- positioning map ---------- */
+.pmap-wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;align-items:start}
+.pmap{position:relative;aspect-ratio:1/0.86;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.pmap .quad{position:absolute;left:50%;top:0;width:50%;height:50%;background:var(--brand-wash)}
+.pmap .quad span{position:absolute;right:10px;top:8px;font-size:11.5px;font-weight:700;color:var(--brand);text-align:right;line-height:1.5}
+.pmap .ax{position:absolute;background:var(--line-2)}
+.pmap .ax.h{left:6%;right:6%;top:50%;height:1px}
+.pmap .ax.v{top:7%;bottom:7%;left:50%;width:1px}
+.pmap .al{position:absolute;font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.pmap .pt{position:absolute;transform:translate(-50%,-50%)}
+.pmap .dot{width:12px;height:12px;border-radius:50%;background:var(--ink-2);border:2px solid var(--surface)}
+.pmap .pt.me .dot{width:20px;height:20px;background:var(--accent);box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 22%,transparent)}
+.pmap .lbl{position:absolute;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:12px;color:var(--ink-2);line-height:1.35}
+.pmap .lbl.r{left:16px}.pmap .lbl.l{right:16px;text-align:right}
+.pmap .lbl.b{top:18px;left:50%;transform:translateX(-50%);text-align:center}
+.pmap .lbl.t{top:auto;bottom:16px;left:50%;transform:translateX(-50%);text-align:center}
+.pmap .me .lbl{font-weight:700;color:var(--ink);font-size:13.5px}
+.pmap .me .lbl.b{top:26px}
+.pmap .me .lbl.l{right:28px}
+
+table.tbl{width:100%;border-collapse:collapse;font-size:14px;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.tbl th,.tbl td{padding:11px 14px;border-top:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.65}
+.tbl thead th{background:var(--surface-2);font-size:12.5px;color:var(--ink-2);font-weight:700;border-top:0;white-space:nowrap}
+.tbl td.num,.tbl th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl tr.total td{font-weight:700;background:var(--surface-2)}
+.tbl tr.me td{background:var(--brand-wash)}
+.tbl-wrap{overflow-x:auto;border-radius:var(--radius);-webkit-overflow-scrolling:touch}
+.tbl-wrap table{min-width:640px}
+
+/* ---------- menu ---------- */
+.menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.mi .nm{font-weight:700}
+.mi .en{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.mi .pr{font-size:20px;font-weight:700;margin-top:6px}
+.mi .ds{font-size:13px;color:var(--ink-2);line-height:1.6}
+.mi.hl{border-color:var(--brand);background:var(--brand-wash)}
+
+/* loop */
+.loop{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;position:relative;margin:8px 0 6px;counter-reset:step}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;position:relative;text-align:center}
+.step .no{width:34px;height:34px;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-weight:700;margin:0 auto 8px;font-family:var(--serif)}
+.step .tt{font-weight:700;line-height:1.5}
+.step .dd{font-size:13px;color:var(--ink-2);margin-top:4px;line-height:1.6}
+.step:not(:last-child)::after{content:"";position:absolute;right:-21px;top:50%;width:14px;height:14px;border-top:3px solid var(--line-2);border-right:3px solid var(--line-2);transform:translateY(-50%) rotate(45deg)}
+.loop-back{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;color:var(--brand);font-weight:700;margin-top:10px}
+.loop-back .ln{flex:1;max-width:60%;height:14px;border:2px solid var(--brand);border-top:0;border-radius:0 0 14px 14px;opacity:.5}
+
+/* collab */
+.collab{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+.shop{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.shop .ic{font-family:var(--serif);font-weight:800;font-size:20px}
+.shop.me{border-color:var(--brand);background:var(--brand-wash)}
+.xchg{display:flex;flex-direction:column;gap:8px;font-size:12.5px;color:var(--ink-2);text-align:center}
+.xchg div{background:var(--surface-2);border-radius:999px;padding:4px 12px;white-space:nowrap}
+
+/* day timeline */
+.day{display:flex;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.day > div{padding:12px 12px 10px;border-right:2px solid var(--surface);min-width:0}
+.day > div:last-child{border-right:0}
+.day .tm{font-size:12px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.day .wh{font-weight:700;font-size:14.5px;line-height:1.45;margin:2px 0}
+.day .wt{font-size:12.5px;color:var(--ink-2);line-height:1.55}
+
+/* journey */
+.journey{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.jstep{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.jstep .jh{background:var(--brand);color:var(--on-brand);padding:10px 12px;font-weight:700;font-size:15px;position:relative}
+.jstep:nth-child(2) .jh{background:color-mix(in srgb,var(--brand) 88%,var(--bg))}
+.jstep:nth-child(3) .jh{background:color-mix(in srgb,var(--brand) 76%,var(--bg))}
+.jstep:nth-child(4) .jh{background:color-mix(in srgb,var(--brand) 64%,var(--bg));color:var(--ink)}
+.jstep:nth-child(5) .jh{background:color-mix(in srgb,var(--brand) 52%,var(--bg));color:var(--ink)}
+.jstep .jh small{display:block;font-weight:500;font-size:11px;opacity:.85;letter-spacing:.1em}
+.jstep ul{list-style:none;padding:10px 12px 12px;margin:0;font-size:13px;line-height:1.6;display:grid;gap:6px}
+.jstep li{margin:0;padding-left:12px;position:relative}
+.jstep li::before{content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;border-radius:50%;background:var(--brand)}
+
+/* model diagram */
+.model{display:grid;grid-template-columns:1fr 88px 1.1fr 88px 1fr;align-items:center;gap:0}
+.mbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:13.5px;line-height:1.65}
+.mbox h4{font-size:14px}
+.mbox.core{background:var(--brand-deep);color:var(--on-brand);border:0;text-align:center;padding:22px 16px}
+.mbox.core .nm{font-family:var(--serif);font-weight:800;font-size:24px;letter-spacing:.06em}
+.mbox.core ul{text-align:left;font-size:13px;margin:10px 0 0;opacity:.92}
+.flow{display:flex;flex-direction:column;gap:14px;align-items:stretch;padding:0 4px}
+.fa{font-size:11px;color:var(--ink-2);text-align:center;line-height:1.35;position:relative;padding-bottom:9px}
+.fa::after{content:"";position:absolute;left:4px;right:10px;bottom:0;height:2px;background:var(--line-2)}
+.fa::before{content:"";position:absolute;right:4px;bottom:-4px;border:5px solid transparent;border-left:8px solid var(--line-2)}
+.fa.rev::after{left:10px;right:4px}
+.fa.rev::before{right:auto;left:-4px;border-left:5px solid transparent;border-right:8px solid var(--line-2)}
+.fa.money{color:var(--brand);font-weight:700}
+.fa.money::after{background:var(--brand)}
+.fa.money::before{border-left-color:var(--brand)}
+.fa.money.rev::before{border-left-color:transparent;border-right-color:var(--brand)}
+.model-sub{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+
+/* streams */
+.streams{display:grid;gap:8px}
+.stream{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stream .no{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:700;color:#fff}
+.stream .tt{font-weight:700;line-height:1.45}
+.stream .dd{font-size:13px;color:var(--ink-2);line-height:1.55}
+.stream .when{font-size:12px;white-space:nowrap}
+
+/* charts */
+.chart-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 12px;box-shadow:var(--shadow);margin:14px 0}
+.chart-card .ct{font-weight:700;font-size:16px;line-height:1.5}
+.chart-card .cs{font-size:13px;color:var(--ink-2);margin-top:2px}
+.chart{position:relative;margin-top:12px;min-height:120px}
+.chart svg{display:block;overflow:visible}
+.chart text{font-family:var(--sans)}
+.chart .tick{font-size:11.5px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.chart .unit{font-size:11.5px;fill:var(--muted)}
+.chart .series-label{font-size:12.5px;font-weight:700;fill:var(--ink)}
+.chart .mk-label{font-size:12px;font-weight:700;fill:var(--ink)}
+.chart .band-label{font-size:12px;font-weight:700}
+.chart .val{font-size:12px;font-weight:700;fill:var(--ink);font-variant-numeric:tabular-nums}
+.chart .val-sub{font-size:11px;fill:var(--ink-2);font-variant-numeric:tabular-nums}
+.tip{position:absolute;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--line-2);border-radius:10px;padding:8px 12px;font-size:12.5px;line-height:1.6;box-shadow:0 8px 24px rgba(0,0,0,.14);opacity:0;transition:opacity .1s;white-space:nowrap;z-index:5}
+.tip b{font-size:13px}
+.tip .sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.tip .r{display:flex;justify-content:space-between;gap:14px}
+.tip .r span:last-child{font-variant-numeric:tabular-nums;font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin-top:10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.legend i.ln{height:3px;border-radius:2px;width:18px}
+.legend i.dia{width:10px;height:10px;transform:rotate(45deg);border-radius:1px}
+.legend i.today{width:2px;height:14px;border-radius:0}
+details.tv{margin-top:8px;font-size:13px}
+details.tv summary{cursor:pointer;color:var(--brand);font-weight:700;padding:4px 0;width:max-content}
+details.tv .tbl{font-size:13px;margin-top:8px}
+
+/* hbar (html) */
+.hbars{display:grid;gap:10px;margin-top:6px}
+.hbar{display:grid;grid-template-columns:minmax(120px,190px) 1fr 92px;gap:12px;align-items:center;font-size:14px}
+.hbar .lb{line-height:1.45}
+.hbar .lb small{display:block;color:var(--muted);font-size:11.5px}
+.hbar .tr{height:22px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.hbar .tr span{display:block;height:100%;background:var(--s1);border-radius:0 4px 4px 0}
+.hbar .vl{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hbar.muted .tr span{background:var(--c3)}
+
+/* cup breakdown */
+.cup{display:flex;height:46px;border-radius:10px;overflow:hidden;gap:2px;background:var(--surface)}
+.cup > div{display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;color:#1f2a22;min-width:0;overflow:hidden;white-space:nowrap}
+.cup > div.p{background:var(--pos);color:#fff}
+.cup-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 16px;margin-top:12px;font-size:13.5px}
+.cup-legend div{display:flex;align-items:center;gap:8px}
+.cup-legend i{width:14px;height:14px;border-radius:4px;flex:none}
+.cup-legend b{margin-left:auto;font-variant-numeric:tabular-nums}
+
+/* scenario */
+.scen{display:grid;gap:10px;margin-top:8px}
+.sc{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center}
+.sc .lb b{display:block}
+.sc .lb small{color:var(--muted);font-size:12px}
+.sc .track{position:relative;height:34px}
+.sc .zero{position:absolute;left:30%;top:-4px;bottom:-4px;width:2px;background:var(--axis)}
+.sc .bar{position:absolute;top:4px;height:26px;border-radius:4px;display:flex;align-items:center;font-size:13px;font-weight:700;white-space:nowrap}
+.sc .bar.pos{background:var(--pos);color:#fff;padding:0 10px;justify-content:flex-end}
+.sc .bar.neg{background:var(--neg);color:#fff;padding:0 8px}
+.sc .out{position:absolute;top:8px;font-size:13px;font-weight:700;white-space:nowrap}
+
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.phase{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;border-top:5px solid var(--s0);display:flex;flex-direction:column;gap:6px}
+.phase .pn{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--muted)}
+.phase .pt{font-weight:700;font-size:16px;line-height:1.45}
+.phase .pd{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.phase .go{margin-top:auto;font-size:12.5px;background:var(--surface-2);border-radius:8px;padding:8px 10px;line-height:1.6}
+.phase .go b{display:block;font-size:11px;letter-spacing:.1em;color:var(--brand)}
+
+/* gantt */
+.gantt-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin-top:12px}
+.gantt{--gl:230px;min-width:1040px;position:relative;font-size:13px}
+.g-row{display:grid;grid-template-columns:var(--gl) 1fr;min-height:34px;position:relative}
+.g-row + .g-row{border-top:1px solid color-mix(in srgb,var(--line) 60%,transparent)}
+.g-lab{position:sticky;left:0;z-index:3;background:var(--surface);padding:6px 12px;display:flex;align-items:center;gap:8px;line-height:1.35;border-right:1px solid var(--line)}
+.g-track{position:relative}
+.g-head .g-lab{font-size:12px;color:var(--muted);font-weight:700}
+.g-head{background:var(--surface-2);position:sticky;top:0;z-index:4}
+.g-head .g-lab{background:var(--surface-2)}
+.g-yr{position:absolute;top:0;height:50%;display:flex;align-items:center;padding-left:8px;font-weight:700;font-size:12.5px;border-left:1px solid var(--line-2)}
+.g-q{position:absolute;bottom:0;height:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);border-left:1px solid var(--line)}
+.g-phase .g-lab{font-weight:700;background:var(--surface-2)}
+.g-phase .g-track{background:var(--surface-2)}
+.g-phase .chip{width:12px;height:12px;border-radius:3px;flex:none}
+.g-bar{position:absolute;top:8px;height:18px;border-radius:4px;display:flex;align-items:center;font-size:11px;font-weight:700;color:#fff;padding:0 6px;white-space:nowrap;overflow:visible;cursor:default}
+.g-bar.dark-ink{color:#1b1b1b}
+.g-bar .out{position:absolute;left:calc(100% + 6px);color:var(--ink-2);font-weight:500}
+.g-bar .out.left{left:auto;right:calc(100% + 6px)}
+.g-span{position:absolute;top:15px;height:4px;border-radius:2px;opacity:.55}
+.g-ms{position:absolute;top:9px;width:16px;height:16px;transform:translateX(-8px) rotate(45deg);border-radius:2px;border:2px solid var(--surface)}
+.g-ms-l{position:absolute;top:8px;font-size:11.5px;font-weight:700;white-space:nowrap;color:var(--ink)}
+.g-ms-row .g-lab{font-weight:700}
+.g-grid{position:absolute;top:0;bottom:0;left:var(--gl);right:0;pointer-events:none;z-index:1}
+.g-grid .yl{position:absolute;top:0;bottom:0;width:1px;background:var(--line-2)}
+.g-grid .ql{position:absolute;top:0;bottom:0;width:1px;background:var(--line);opacity:.6}
+.g-grid .today{position:absolute;top:0;bottom:0;width:2px;background:var(--accent)}
+.g-today-h{position:absolute;top:0;bottom:0;display:flex;align-items:flex-end;padding:0 0 6px 4px;font-size:10.5px;font-weight:700;color:var(--accent);white-space:nowrap;border-left:2px solid var(--accent)}
+.g-row .g-track > *{z-index:2}
+
+/* drive */
+.dt-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;margin:6px 0}
+.dt-flow .step .tm{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;background:var(--brand-wash);color:var(--brand);padding:2px 10px;border-radius:999px}
+.rule{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:var(--surface);border:2px dashed var(--brand);border-radius:var(--radius);padding:18px 20px;margin-top:14px}
+.rule .big{font-size:34px;font-weight:700;color:var(--brand);line-height:1.1;text-align:center}
+.rule .big small{display:block;font-size:12px;color:var(--ink-2);font-weight:500}
+.steps3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.s3{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.s3 .sn{font-size:12px;font-weight:700;color:var(--s4);letter-spacing:.12em}
+.s3 .st{font-weight:700;font-size:16px;margin:2px 0 6px;line-height:1.45}
+.s3 .sd{font-size:13.5px;color:var(--ink-2);line-height:1.65}
+.s3 .sp{font-size:12px;color:var(--muted);margin-top:8px;font-variant-numeric:tabular-nums}
+
+/* risk */
+.lv{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.lv.hi{background:var(--neg-wash);color:var(--neg)}
+.lv.md{background:var(--surface-2);color:var(--ink-2)}
+.lv.lo{background:var(--pos-wash);color:var(--pos)}
+
+/* review */
+.rv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.rv .card h4{display:flex;align-items:center;gap:8px;font-size:16px;margin-bottom:10px}
+.rv .card ol{margin:0;padding-left:1.2em;font-size:14.5px}
+.rv .card li{margin:.45em 0;line-height:1.7}
+.rv .card li b{display:block}
+
+/* checklist */
+.cl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.cl .card h4{font-family:var(--serif);font-size:18px;margin-bottom:2px}
+.cl .card .when{font-size:12px;color:var(--muted);margin-bottom:10px}
+.cl label{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.6;padding:7px 0;border-top:1px dashed var(--line);cursor:pointer}
+.cl label:first-of-type{border-top:0}
+.cl input{margin-top:5px;accent-color:var(--brand);width:16px;height:16px;flex:none}
+.cl input:checked + span{color:var(--muted);text-decoration:line-through}
+
+/* glossary */
+.gl-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.gl-tools input{flex:1;min-width:200px;font:inherit;font-size:15px;padding:10px 14px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink)}
+.gl-cats{display:flex;flex-wrap:wrap;gap:6px}
+.gl-cats button{font:inherit;font-size:13px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:5px 12px;cursor:pointer}
+.gl-cats button.on{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+@media (prefers-color-scheme: dark){.gl-cats button.on{color:#0f1a12}}
+.gl-group h3{margin-top:26px}
+.gl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}
+.gi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;scroll-margin-top:90px}
+.gi:target,.gi.flash{border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 25%,transparent)}
+.gi dt{font-weight:700;font-size:15px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.gi dt small{font-weight:500;font-size:11.5px;color:var(--muted)}
+.gi dd{margin:4px 0 0;font-size:13.5px;color:var(--ink-2);line-height:1.7}
+.gl-empty{display:none;color:var(--muted);padding:20px 0}
+
+.sources{font-size:13px;color:var(--ink-2)}
+.sources li{margin:.35em 0;line-height:1.6;word-break:break-word}
+footer{border-top:1px solid var(--line);padding:28px 16px 40px;text-align:center;font-size:12.5px;color:var(--muted)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:0}
+  .toc{display:none;position:fixed;top:58px;left:12px;right:12px;max-height:70vh;z-index:70;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.2);padding:12px}
+  .toc.open{display:block}
+  .toc-btn{display:inline-block}
+  .kpis{grid-template-columns:repeat(3,1fr)}
+  .kpi:last-child{grid-column:span 2}
+  .hero-in{grid-template-columns:1fr}
+  .tag-card{max-width:520px}
+}
+@media (max-width:860px){
+  .grid4,.phases{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid3,.menu,.steps3,.cl{grid-template-columns:minmax(0,1fr)}
+  .journey{grid-template-columns:minmax(0,1fr)}
+  .pmap-wrap,.rv,.compare,.model-sub{grid-template-columns:minmax(0,1fr)}
+  .model{grid-template-columns:minmax(0,1fr);gap:0}
+  .flow{flex-direction:row;justify-content:center;padding:10px 0;gap:24px}
+  .fa{padding-bottom:0;padding-right:0;writing-mode:horizontal-tb;width:120px}
+  .fa::after{display:none}
+  .fa::before,.fa.rev::before,.fa.money::before,.fa.money.rev::before{content:"↓ ";position:static;border:0;display:inline;font-size:14px;font-weight:700}
+  .fa.rev::before,.fa.money.rev::before{content:"↑ "}
+  .fa{text-align:center;width:auto;font-size:12.5px}
+  .loop,.dt-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .loop .step:nth-child(2)::after,.dt-flow .step:nth-child(2)::after{display:none}
+  .why-row{grid-template-columns:minmax(0,1fr);gap:4px}
+  .why-row .arrow{transform:rotate(90deg);height:22px}
+  .why-head{display:none}
+  .why-row{background:var(--surface-2);padding:8px;border-radius:14px}
+  .collab{grid-template-columns:minmax(0,1fr)}
+  .xchg{flex-direction:row;justify-content:center;flex-wrap:wrap}
+  .gl{grid-template-columns:minmax(0,1fr)}
+  .day{flex-direction:column}
+  .day > div{border-right:0;border-bottom:2px solid var(--surface);flex:none!important}
+}
+@media (max-width:600px){
+  body{font-size:15.5px}
+  .topbar .doc{display:none}
+  .hero-in{padding:40px 16px 100px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi:last-child{grid-column:1/-1}
+  .kpi .v{font-size:22px}
+  .grid2,.grid4,.phases{grid-template-columns:minmax(0,1fr)}
+  .summary .row{grid-template-columns:minmax(0,1fr)}
+  .summary .q{padding:12px 16px}
+  .summary .a{padding:12px 16px 16px}
+  .verdict{flex-direction:column;align-items:flex-start}
+  .loop,.dt-flow{grid-template-columns:minmax(0,1fr)}
+  .step:not(:last-child)::after{right:50%;top:auto;bottom:-20px;transform:translateX(50%) rotate(135deg)}
+  .loop .step:nth-child(2)::after,.dt-flow .step:nth-child(2)::after{display:block}
+  .hbar{grid-template-columns:minmax(0,1fr) 84px;gap:4px 10px}
+  .hbar .lb{grid-column:1/-1}
+  .sc{grid-template-columns:minmax(0,1fr);gap:4px}
+  .cup-legend{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .cup > div span{display:none}
+  .rule{grid-template-columns:minmax(0,1fr)}
+  .gantt{--gl:150px;font-size:12px}
+  .chart-card{padding:14px 12px 10px}
+}
+@media print{
+  .topbar,.toc,.back-btn,.gl-tools{display:none!important}
+  .layout{grid-template-columns:1fr}
+  .sec{break-inside:avoid-page}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="logo" href="#top" aria-label="茶々○園 事業計画書の先頭へ">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1d4a31"/><path d="M44 16a20 20 0 1 0 6 10" fill="none" stroke="#f3ecd8" stroke-width="6" stroke-linecap="round"/></svg>
+      茶々○園
+    </a>
+    <span class="doc">事業計画書 ｜ 2026年11月版</span>
+    <span class="grow"></span>
+    <button class="toc-btn" id="tocBtn" aria-expanded="false" aria-controls="toc">目次</button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div>
+      <div class="eyebrow"><span>事業計画書</span>2026年11月15日 初版</div>
+      <h1>茶々○園</h1>
+      <p class="sub">日本茶で、「第二のスタバ」をつくる。</p>
+      <p class="desc">押上・東京ソラマチから徒歩30秒、ベーグル屋さんの隣に、日本茶専門のお店をひらきます。本格的なのに速くて手軽。専用ボトルを持ってくれば、作りたての水出し茶が1杯200円。1号店で勝ちパターンをつくり、いずれは国道沿いの24時間ドライブスルーへ広げます。</p>
+    </div>
+    <div class="tag-card" aria-label="ブランドの合言葉">
+      <span class="stamp">ブランドの合言葉</span>
+      <div class="jp">日本人よ、<br>日本茶を飲め。</div>
+      <div class="en">JAPANESE, DRINK JAPANESE TEA. — AND YOU TOO.</div>
+      <div class="note">日本の人には「ハッとする呼びかけ」、海外の人には「思わず写真を撮りたくなるユーモア」として届く、二つの顔を持った言葉です。</div>
+    </div>
+  </div>
+</section>
+
+<div class="kpis" aria-label="主要な数字">
+  <div class="kpi"><div class="k">1号店オープン</div><div class="v">2027<small>年6月</small></div><div class="h">押上・ソラマチ徒歩30秒</div></div>
+  <div class="kpi"><div class="k">開業に必要なお金</div><div class="v">約1,960<small>万円</small></div><div class="h">うち借入れ1,200万円</div></div>
+  <div class="kpi"><div class="k">黒字になるライン</div><div class="v">1日 約140<small>人</small></div><div class="h">目標は1日180人</div></div>
+  <div class="kpi"><div class="k">投資を取り戻すまで</div><div class="v">約2<small>年</small></div><div class="h">開業25か月目（標準ケース）</div></div>
+  <div class="kpi"><div class="k">5年目（2031年）の年商</div><div class="v">約1.7<small>億円</small></div><div class="h">3店舗＋ドライブスルー1店</div></div>
+</div>
+
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="目次">
+    <div class="t">目次</div>
+    <ol>
+      <li><a href="#summary"><span class="n">01</span>1分でわかる要約</a></li>
+      <li><a href="#why"><span class="n">02</span>なぜやるのか</a></li>
+      <li><a href="#market"><span class="n">03</span>市場の追い風</a></li>
+      <li><a href="#customer"><span class="n">04</span>お客さまは誰か</a></li>
+      <li><a href="#competition"><span class="n">05</span>競合とねらう場所</a></li>
+      <li><a href="#product"><span class="n">06</span>商品とサービス</a></li>
+      <li><a href="#store"><span class="n">07</span>1号店（押上）</a></li>
+      <li><a href="#brand"><span class="n">08</span>ブランドと集客</a></li>
+      <li><a href="#model"><span class="n">09</span>もうけの仕組み</a></li>
+      <li><a href="#numbers"><span class="n">10</span>収支計画</a></li>
+      <li><a href="#funding"><span class="n">11</span>資金計画</a></li>
+      <li><a href="#roadmap"><span class="n">12</span>ロードマップ</a></li>
+      <li><a href="#drive"><span class="n">13</span>ドライブスルー構想</a></li>
+      <li><a href="#risk"><span class="n">14</span>リスクと対策</a></li>
+      <li><a href="#kpi"><span class="n">15</span>成功の物差し</a></li>
+      <li><a href="#review"><span class="n">16</span>責任者の視点</a></li>
+      <li><a href="#next"><span class="n">17</span>最初の90日</a></li>
+      <li><a href="#glossary"><span class="n">18</span>用語集</a></li>
+      <li><a href="#sources"><span class="n">—</span>出典と前提</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="guide" role="note">
+      <span class="ic" aria-hidden="true">?</span>
+      <div><b>このページの読み方：</b><a class="t" href="#g-yougo">点線の下線</a>がついた言葉は、最後の<a href="#glossary">用語集</a>で解説しています。パソコンではカーソルを合わせると意味が出て、クリック（スマホではタップ）すると用語集へ移動します。各章の最初にある緑の「この章のポイント」だけ読んでも、全体がつかめるようにしています。数字はすべて2026年11月時点の<b>仮説（目安）</b>で、検証しながら更新します。</div>
+    </div>
+
+    <!-- 01 -->
+    <section class="sec" id="summary">
+      <div class="sec-h"><span class="num">01</span><h2>1分でわかる要約</h2><p class="lead">忙しい方はここだけ読めば全体がつかめます。</p></div>
+      <div class="summary">
+        <div class="row"><div class="q"><span class="qi">何</span>何をする？</div><div class="a">押上・東京ソラマチから徒歩30秒、ベーグル屋さんの隣に<b>日本茶専門のテイクアウト中心のお店「茶々○園」</b>をひらきます。</div></div>
+        <div class="row"><div class="q"><span class="qi">誰</span>誰に？</div><div class="a">① スカイツリー観光に来た<b>海外のお客さま</b>　② 近くで<b>働く人・住む人</b>　③ 国内観光の<b>家族連れ</b>。将来は④ 朝や深夜に<b>車で移動する人</b>。</div></div>
+        <div class="row"><div class="q"><span class="qi">新</span>何が新しい？</div><div class="a"><b>「本格的なのに、速くて手軽」</b>。<a class="t" href="#g-mybottle">専用ボトル</a>を持ってくれば、作りたての<a class="t" href="#g-mizudashi">水出し</a>茶が1杯200円。毎日通える日本茶の店です。</div></div>
+        <div class="row"><div class="q"><span class="qi">金</span>どうもうける？</div><div class="a">1人あたり平均約610円のドリンクと、観光客向けの茶葉・ギフト。<b>1日に約140人</b>来れば<a class="t" href="#g-bep">黒字</a>、目標は1日180人です。</div></div>
+        <div class="row"><div class="q"><span class="qi">広</span>どう広げる？</div><div class="a">1号店で勝ちパターンをつくる → 都内に2・3号店 → 国道沿いの<a class="t" href="#g-dt">ドライブスルー</a>（条件がそろえば24時間営業）へ。</div></div>
+      </div>
+      <div class="verdict">
+        <div class="badge"><small>責任者の判断</small>条件付きで<br>GO</div>
+        <div>立地と時代の追い風はとても良い。一方で「第二のスタバ」は目標であって、まだ戦略ではありません。<b>いきなり大きくお金をかけず、<a class="t" href="#g-mvp">テスト販売</a>とクラウドファンディングで「本当に売れるか」を数字で確かめてから開業する</b>、という条件つきで進めるべきだと考えます（詳しくは<a href="#review">16章</a>）。</div>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="sec" id="why">
+      <div class="sec-h"><span class="num">02</span><h2>なぜやるのか</h2><p class="lead">創業者が感じた3つの実感は、そのまま世の中の「すき間」を指しています。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>個人の「不満」は、同じ不満を持つ人が多ければ事業のチャンスになります。</li><li>3つのきっかけが、それぞれ1号店・マイボトル・ドライブスルーという計画の柱につながっています。</li></ul></div>
+      <div class="why-head"><span>きっかけ（創業者の実感）</span><span></span><span>世の中の課題</span><span></span><span>茶々○園の答え</span></div>
+      <div class="why">
+        <div class="why-row">
+          <div class="why-cell start"><span class="lb">きっかけ 1</span><span class="q">「スタバに飽きた」</span></div>
+          <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="why-cell"><span class="lb">課題</span>毎日気軽に寄れるお店は、コーヒー中心のチェーンがほとんど。日本茶を「いつもの一杯」として選べる場所が少ない。</div>
+          <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="why-cell ans"><span class="lb">答え → 1号店</span>日本茶で「毎日通いたくなる店」をつくる。おしゃれで、速くて、外国の人にも伝わる。</div>
+        </div>
+        <div class="why-row">
+          <div class="why-cell start"><span class="lb">きっかけ 2</span><span class="q">「お茶は体にやさしい」</span></div>
+          <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="why-cell"><span class="lb">課題</span>お茶好きは多いのに、急須で淹れる人は減った。家庭のリーフ茶（茶葉）への支出は2008年の約6割まで落ち、ペットボトルが増えている。</div>
+          <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="why-cell ans"><span class="lb">答え → マイボトル</span>手間なく、作りたての本格的な一杯を。専用ボトルなら1杯200円で毎日続けられる。</div>
+        </div>
+        <div class="why-row">
+          <div class="why-cell start"><span class="lb">きっかけ 3</span><span class="q">「夜中のドライブで、開いている店がない」</span></div>
+          <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="why-cell"><span class="lb">課題</span>深夜や早朝においしい一杯を買える場所は、ほぼコンビニだけ。車を降りずに、ちゃんとした飲み物を買える店はさらに少ない。</div>
+          <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="why-cell ans"><span class="lb">答え → ドライブスルー</span>将来、国道沿いに「出勤前の60秒」で買えるドライブスルーをつくる。条件がそろえば24時間営業に。</div>
+        </div>
+      </div>
+      <div class="warn"><div class="lb">注意：「体に良い」の伝え方</div>お茶の効き目を、お店やSNSで「〇〇に効く」「やせる」のようにうたうと、医薬品などのルールを定めた法律（薬機法）に触れるおそれがあります。<b>「ほっとする」「やさしい味」「カフェインひかえめ」など、体験や事実の言葉で伝える</b>のが安全です。</div>
+    </section>
+
+    <!-- 03 -->
+    <section class="sec" id="market">
+      <div class="sec-h"><span class="num">03</span><h2>市場の追い風</h2><p class="lead">「日本茶 × 海外のお客さま × 押上」には、いま強い追い風が吹いています。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>日本に来る海外の旅行者（<a class="t" href="#g-inbound">インバウンド</a>）は過去最高。世界的な抹茶ブームで、日本の緑茶の輸出も約2倍に増えました。</li><li>国内では「お茶離れ」というより「淹れる手間離れ」。手軽で本格的な一杯には、まだ大きな余地があります。</li></ul></div>
+      <div class="grid4">
+        <div class="stat"><div class="k">2025年の訪日外国人</div><div class="v">4,268<small>万人</small></div><div class="d">前年より15.8%増え、初めて4,000万人を突破。過去最高です。</div><div class="src">出典：<a href="https://www.jnto.go.jp/news/press/20260121_monthly.html" target="_blank" rel="noopener">JNTO（2026年1月発表の推計値）</a></div></div>
+        <div class="stat"><div class="k">2025年の緑茶の輸出額</div><div class="v">約721<small>億円</small></div><div class="d">2024年（364億円）のほぼ2倍。抹茶ラテなど、世界的な抹茶ブームが原動力です。</div><div class="src">出典：<a href="https://www.nippon.com/ja/japan-data/h02743/" target="_blank" rel="noopener">nippon.com</a>／農林水産省</div></div>
+        <div class="stat"><div class="k">東京ソラマチの売上（2025年度）</div><div class="v">600<small>億円</small></div><div class="d">3年連続で過去最高。お店のすぐ隣に、大きなお客さまの流れがあります。</div><div class="src">出典：<a href="https://prtimes.jp/main/html/rd/p/000000429.000041446.html" target="_blank" rel="noopener">東武タウンソラマチ（PR TIMES）</a></div></div>
+        <div class="stat"><div class="k">スカイツリー来場者の海外比率</div><div class="v">約30<small>%</small></div><div class="d">2023年度の来場者のうち、約3割が海外からのお客さまでした。</div><div class="src">出典：<a href="https://fpcj.jp/wp/wp-content/uploads/2024/09/8c9555b31386b37c66d61c3bec2fe0ff.pdf" target="_blank" rel="noopener">東武タワースカイツリー資料（FPCJ）</a></div></div>
+      </div>
+
+      <h3>家庭のお茶は「急須」から「ペットボトル」へ</h3>
+      <div class="compare">
+        <div class="vs">
+          <h4>リーフ茶（茶葉）への支出</h4>
+          <div class="note">1世帯あたり、2008年を100とした場合</div>
+          <div class="meter" role="img" aria-label="リーフ茶の支出は2008年比64"><span style="width:43.8%;background:var(--c3)"></span></div>
+          <div><b style="font-size:22px">64</b> <span class="note">← 約4割減った</span></div>
+        </div>
+        <div class="vs">
+          <h4>ペットボトルなど茶飲料への支出</h4>
+          <div class="note">1世帯あたり、2008年を100とした場合</div>
+          <div class="meter" role="img" aria-label="茶飲料の支出は2008年比146"><span style="width:100%;background:var(--s1)"></span></div>
+          <div><b style="font-size:22px">146</b> <span class="note">← 約1.5倍に増えた</span></div>
+        </div>
+      </div>
+      <p class="note" style="margin-top:8px">出典：<a href="https://www.maff.go.jp/j/seisan/tokusan/cha/attach/pdf/ocha-203.pdf" target="_blank" rel="noopener">農林水産省「茶をめぐる情勢」</a>（総務省「家計調査」をもとに作成）。お茶にかける合計額は年1.1万円前後でほぼ横ばい。</p>
+      <p style="margin-top:14px">つまり、日本人はお茶を飲まなくなったのではなく、<b>「淹れる手間」から離れた</b>のです。ペットボトルの手軽さと、淹れたての本格的なおいしさ。この両方をそろえたお店が、茶々○園のねらう場所です。</p>
+    </section>
+
+    <!-- 04 -->
+    <section class="sec" id="customer">
+      <div class="sec-h"><span class="num">04</span><h2>お客さまは誰か</h2><p class="lead">「みんな」に向けたお店は、誰にも刺さりません。典型的なお客さまを具体的な人物として描きます。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>観光客は「広めてくれる人」、近所の人は「支えてくれる人」。役割の違う2種類のお客さまを両方つかみます。</li><li>観光客だけに頼ると、海外情勢で売上が大きく揺れます。地元の常連づくりが経営の安定につながります。</li></ul></div>
+      <p>以下は、考え方をそろえるための架空の人物像（<a class="t" href="#g-persona">ペルソナ</a>）です。</p>
+      <div class="grid2">
+        <div class="persona">
+          <div class="top"><div class="av" style="background:var(--s3)">旅</div><div><div class="nm">エマさん（32歳）</div><div class="meta">ロンドンから来た旅行者 ／ スカイツリー観光の途中</div></div></div>
+          <dl><div><dt>したいこと</dt><dd>本場の抹茶やお茶を体験したい。写真に残したい。友だちへのお土産もほしい。</dd></div><div><dt>困りごと</dt><dd>メニューが日本語だけだと注文しにくい。どのお茶が何なのか分からない。</dd></div><div><dt>茶々○園では</dt><dd>英語つきの「3種飲み比べ」と産地カード、撮りたくなる看板、茶葉のギフト。</dd></div><div><dt>役割</dt><dd><span class="pill g">広めてくれる人</span> 来店は1回でも、SNSや口コミで世界に広げてくれる。</dd></div></dl>
+        </div>
+        <div class="persona">
+          <div class="top"><div class="av" style="background:var(--s1)">近</div><div><div class="nm">佐藤さん（29歳）</div><div class="meta">押上在住・錦糸町で働く会社員</div></div></div>
+          <dl><div><dt>したいこと</dt><dd>出勤前に一杯買いたい。でも毎日のカフェ代がかさむし、コーヒーにも少し飽きてきた。</dd></div><div><dt>困りごと</dt><dd>カフェインをひかえたい日もある。使い捨てカップのごみも気になる。</dd></div><div><dt>茶々○園では</dt><dd>専用ボトルで水出し茶が1杯200円。朝8時から開いていて、待たずに受け取れる。</dd></div><div><dt>役割</dt><dd><span class="pill g">支えてくれる人</span> 週3回以上来る常連さん。売上の土台になる。</dd></div></dl>
+        </div>
+        <div class="persona">
+          <div class="top"><div class="av" style="background:var(--s2);color:#1b1b1b">家</div><div><div class="nm">田中さん一家（40代夫婦と小学生）</div><div class="meta">国内旅行でソラマチへ</div></div></div>
+          <dl><div><dt>したいこと</dt><dd>歩き疲れたので一休みしたい。子どもと一緒に飲めるものがいい。</dd></div><div><dt>困りごと</dt><dd>カフェは大人向けのメニューばかりで、子ども向けの飲み物が少ない。</dd></div><div><dt>茶々○園では</dt><dd>カフェインの少ないほうじ茶や和紅茶のメニュー、隣のベーグルとのセット。</dd></div><div><dt>役割</dt><dd><span class="pill">客単価を上げてくれる人</span> まとめ買いやお土産で1回の金額が大きい。</dd></div></dl>
+        </div>
+        <div class="persona future">
+          <div class="top"><div class="av" style="background:var(--s4)">車</div><div><div class="nm">高橋さん（41歳）<span class="pill r" style="margin-left:6px">将来</span></div><div class="meta">物流ドライバー ／ 夜中や早朝に国道を走る</div></div></div>
+          <dl><div><dt>したいこと</dt><dd>眠気覚ましに、コーヒー以外のおいしい一杯がほしい。車を降りずにすぐ買いたい。</dd></div><div><dt>困りごと</dt><dd>深夜に開いているのはコンビニくらい。駐車して店に入るのが面倒。</dd></div><div><dt>茶々○園では</dt><dd>国道沿いのドライブスルー。<a class="t" href="#g-mobile">スマホで事前注文</a>すれば、窓口で受け取るだけで60秒。</dd></div><div><dt>役割</dt><dd><span class="pill r">次の柱</span> ドライブスルー事業のお客さま。</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section class="sec" id="competition">
+      <div class="sec-h"><span class="num">05</span><h2>競合とねらう場所</h2><p class="lead">「誰と比べて、何がちがうのか」を図にすると、ねらうべき場所が見えてきます。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>日本茶のお店の多くは「ゆっくり座る」タイプ。<b>「本格的な日本茶 × サッと持ち帰り」</b>の場所は、まだ手薄です。</li><li>ただし小さな日本茶スタンドはすでにあります。勝負は「仕組み（マイボトル会員）」「多店舗にできる設計」「夜とクルマ」の3つです。</li></ul></div>
+      <div class="pmap-wrap">
+        <div>
+          <div class="pmap" role="img" aria-label="ポジショニングマップ。横軸は、左がゆっくり滞在、右がサッと持ち帰り。縦軸は、上が日本茶中心、下がコーヒー中心。茶々○園は右上（日本茶中心で持ち帰り）に位置する。">
+            <div class="quad"><span>ねらう場所<br>本格日本茶 × 速い・手軽</span></div>
+            <div class="ax h"></div><div class="ax v"></div>
+            <div class="al" style="left:8px;top:50%;transform:translateY(-130%)">← ゆっくり滞在</div>
+            <div class="al" style="right:8px;top:50%;transform:translateY(-130%)">サッと持ち帰り →</div>
+            <div class="al" style="left:50%;top:8px;transform:translateX(8px)">↑ 日本茶が中心</div>
+            <div class="al" style="left:50%;bottom:8px;transform:translateX(8px)">↓ コーヒーが中心</div>
+            <div class="pt" style="left:30%;top:80%"><div class="dot"></div><div class="lbl r">スターバックス</div></div>
+            <div class="pt" style="left:56%;top:89%"><div class="dot"></div><div class="lbl r">ドトール・タリーズなど</div></div>
+            <div class="pt" style="left:88%;top:58%"><div class="dot"></div><div class="lbl b">コンビニ<br>（ペットボトル茶）</div></div>
+            <div class="pt" style="left:12%;top:16%"><div class="dot"></div><div class="lbl b">老舗の茶舗<br>・甘味処</div></div>
+            <div class="pt" style="left:28%;top:32%"><div class="dot"></div><div class="lbl r">日本茶カフェのチェーン</div></div>
+            <div class="pt" style="left:63%;top:30%"><div class="dot"></div><div class="lbl b">個人の<br>日本茶スタンド</div></div>
+            <div class="pt me" style="left:85%;top:24%"><div class="dot"></div><div class="lbl b">茶々○園</div></div>
+          </div>
+          <p class="note" style="margin-top:6px">位置は公開情報と一般的なイメージにもとづく目安です。</p>
+        </div>
+        <div>
+          <h4>図の読み方</h4>
+          <p style="font-size:14.5px">右上ほど「日本茶が主役で、サッと買える」お店です。スターバックスは居心地の良さ（<a class="t" href="#g-third">サードプレイス</a>）で、日本茶カフェのチェーンは抹茶スイーツや食事でそれぞれ強みを持ちますが、どちらも「座ってゆっくり」寄りです。</p>
+          <p style="font-size:14.5px">茶々○園は右上をねらいます。さらに、ほかのどこも手をつけていない<b>「深夜・早朝 × 車」</b>へ、将来ドライブスルーで広げていきます。</p>
+        </div>
+      </div>
+      <h3>主な競合と、茶々○園の勝ち筋</h3>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>競合</th><th>強み</th><th>すき間（弱いところ）</th><th>茶々○園の勝ち筋</th></tr></thead>
+        <tbody>
+          <tr><td><b>スターバックス</b><br><span class="note">国内2,011店（2025年3月末）</span></td><td>圧倒的なブランド力。居心地の良い空間。抹茶ラテなどもある。</td><td>日本茶は「メニューの一つ」。日本茶ならではの奥深さや物語は主役ではない。</td><td>日本茶専門の深さ。産地の物語。マイボトルで1杯200円。</td></tr>
+          <tr><td><b>日本茶カフェのチェーン</b><br><span class="note">例：nana's green tea（2001年創業。海外200店を目標に展開中）</span></td><td>抹茶スイーツや食事が充実。国内外で知名度がある。</td><td>席数が必要な滞在型。素早い持ち帰りや深夜営業は主な狙いではない。</td><td>持ち帰り特化の速さ。夜とクルマ（ドライブスルー）。</td></tr>
+          <tr><td><b>個人の日本茶スタンド</b></td><td>こだわりの品質。店主の個性。</td><td>1店舗で終わりがち。営業時間が短い。海外客向けの仕組みは店によってまちまち。</td><td>最初から多店舗を前提にした仕組みづくり。3か国語対応。</td></tr>
+          <tr><td><b>コンビニ・ペットボトル茶</b></td><td>安い。24時間。どこにでもある。</td><td>作りたての香りや体験はない。</td><td>作りたての水出し茶を、ボトル持参なら200円で。</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <!-- 06 -->
+    <section class="sec" id="product">
+      <div class="sec-h"><span class="num">06</span><h2>商品とサービス</h2><p class="lead">主役は抹茶ではなく、<b>水出しの煎茶とほうじ茶</b>。原料が値上がりしにくく、速く出せて、毎日飲める一杯です。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>メニューは少なく絞り、「待たせない」ことを最優先にします。</li><li>マイボトルは「安さ」のためだけでなく、<b>常連さんを増やす仕組み</b>です。</li><li>隣のベーグル屋さんとは、お互いにお客さまを紹介し合う関係をつくります。</li></ul></div>
+      <h3>メニュー（案）</h3>
+      <div class="menu">
+        <div class="mi hl"><span class="nm">水出し煎茶</span><span class="en">Cold-brew Sencha</span><span class="pr">¥480</span><span class="ds">数時間かけて水で抽出。苦みが少なく、甘みとうま味が際立つ看板商品。</span></div>
+        <div class="mi hl"><span class="nm">水出しほうじ茶</span><span class="en">Cold-brew Hojicha</span><span class="pr">¥480</span><span class="ds">香ばしくてカフェインひかえめ。子どもや夜にも。</span></div>
+        <div class="mi"><span class="nm">ほうじ茶ラテ</span><span class="en">Hojicha Latte</span><span class="pr">¥620</span><span class="ds">温・冷。オーツミルクへの変更も可（+¥50）。</span></div>
+        <div class="mi"><span class="nm">抹茶ラテ</span><span class="en">Matcha Latte</span><span class="pr">¥720</span><span class="ds">海外のお客さまの定番。原料価格に合わせて値段を見直す。</span></div>
+        <div class="mi"><span class="nm">茶々○園 飲み比べ</span><span class="en">Tea Flight (3 kinds)</span><span class="pr">¥980</span><span class="ds">3種を小さなカップで。英語の産地カードつきで観光客に人気をねらう。</span></div>
+        <div class="mi"><span class="nm">和紅茶・季節の一杯</span><span class="en">Japanese Black Tea / Seasonal</span><span class="pr">¥550〜</span><span class="ds">季節ごとに入れ替えて「また来る理由」をつくる。</span></div>
+      </div>
+      <p class="note" style="margin-top:8px">ほかに、茶葉（50g ¥1,200〜）、水出し用ティーバッグ（10包 ¥980）、ギフト箱（¥2,500〜）を販売します。</p>
+
+      <h3>マイボトル・プログラム（常連さんを増やす仕組み）</h3>
+      <div class="loop">
+        <div class="step"><div class="no">1</div><div class="tt">専用ボトルを買う</div><div class="dd">500ml・¥2,800<br>はじめの1杯は無料</div></div>
+        <div class="step"><div class="no">2</div><div class="tt">ボトルを持って来店</div><div class="dd">洗った状態で持参。出勤前に立ち寄る</div></div>
+        <div class="step"><div class="no">3</div><div class="tt">水出し茶を¥200で</div><div class="dd">作り置きのタンクから注ぐだけ。待ち時間ほぼゼロ</div></div>
+        <div class="step"><div class="no">4</div><div class="tt">LINEで特典</div><div class="dd">10杯で1杯無料。季節の新茶を先にお知らせ</div></div>
+      </div>
+      <div class="loop-back" aria-hidden="true"><span class="ln"></span></div>
+      <div class="loop-back" style="margin-top:0">↺ 2に戻って、くり返し通ってもらう</div>
+      <div class="grid3" style="margin-top:16px">
+        <div class="card"><h4>200円でももうかる理由</h4><p style="font-size:14px;margin:0">500mlの水出し茶に使う茶葉は約10g、茶葉代は約40円。カップ代もかかりません。安くしても利益が残り、そのぶん来店回数が増えます。</p></div>
+        <div class="card"><h4>お店にとってのうれしさ</h4><p style="font-size:14px;margin:0">① 来店回数が増える　② ごみを減らす取り組みが海外のお客さまに響く　③ 会員の情報から「誰が・いつ・何を」買うかが分かる。</p></div>
+        <div class="card"><h4>衛生のルール</h4><p style="font-size:14px;margin:0">洗ってあるボトルに限る。店の注ぎ口をボトルに触れさせない。店頭にボトル洗浄機を置く。開業前に保健所に相談して決めます。</p></div>
+      </div>
+
+      <h3>隣のベーグル屋さんとのコラボ</h3>
+      <div class="collab">
+        <div class="shop"><div class="ic">ベーグル屋さん</div><div class="note">朝食・軽食が強い</div></div>
+        <div class="xchg"><div>→ 茶々○園のレシートでベーグル50円引き</div><div>← ベーグルのレシートでお茶50円引き</div><div>共同のセット看板・SNS投稿</div></div>
+        <div class="shop me"><div class="ic">茶々○園</div><div class="note">飲み物が強い</div></div>
+      </div>
+      <p style="margin-top:12px;font-size:14.5px">「パンとお茶」は相性の良い組み合わせです。売上を分け合う複雑な契約ではなく、<b>レシートを見せたら割引という簡単な仕組み</b>から始めます。お互いのお客さまを紹介し合う（<a class="t" href="#g-collab">相互送客</a>）関係をつくるのがねらいで、条件は書面で取り決めます。</p>
+    </section>
+
+    <!-- 07 -->
+    <section class="sec" id="store">
+      <div class="sec-h"><span class="num">07</span><h2>1号店（押上）</h2><p class="lead">小さく、速く、目立つお店。観光客と地元の人の両方の流れが交わる場所に置きます。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>押上駅は4路線が乗り入れ、朝は通勤の人、昼は観光客、夕方は帰宅の人と、時間帯で客層が入れ替わります。</li><li>約10坪の小さな店で、テイクアウト中心。そのぶん家賃と人件費を抑えます。</li></ul></div>
+      <div class="grid2">
+        <div class="card">
+          <h4>立地の強み</h4>
+          <ul style="font-size:14.5px;margin:0">
+            <li><b>ソラマチから徒歩30秒</b>：年間売上600億円の商業施設の目の前。観光客が歩く道すじにある。</li>
+            <li><b>ベーグル屋さんの隣</b>：「パン＋お茶」の組み合わせで、ついで買いが生まれる。</li>
+            <li><b>押上駅（4路線）</b>：東京メトロ半蔵門線・都営浅草線・京成押上線・東武スカイツリーライン。通勤や近所の人の毎日の動線でもある。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>お店の概要（案）</h4>
+          <table class="tbl" style="border:0;box-shadow:none">
+            <tbody>
+              <tr><td style="border-top:0;width:34%"><b>広さ</b></td><td style="border-top:0">約10坪（約33㎡）</td></tr>
+              <tr><td><b>席</b></td><td>8席＋テイクアウト中心</td></tr>
+              <tr><td><b>営業時間</b></td><td>8:00〜20:00（年中無休を想定）</td></tr>
+              <tr><td><b>スタッフ</b></td><td>同時に2人、混む時間は3人</td></tr>
+              <tr><td><b>支払い</b></td><td><a class="t" href="#g-cashless">キャッシュレス</a>中心（現金も可）</td></tr>
+              <tr><td><b>言語</b></td><td>日本語・英語・中国語・韓国語のメニュー</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h3>1日の流れ：時間帯で客層が入れ替わる</h3>
+      <div class="day" role="img" aria-label="営業時間8時から20時の客層。8時から10時は通勤と近所の常連、10時から17時は観光客、17時から20時は帰宅とソラマチ帰りのお客さま。">
+        <div style="flex:2;background:var(--brand-wash)"><div class="tm">8:00–10:00</div><div class="wh">通勤・近所の常連さん</div><div class="wt">マイボトルで水出し茶。<br>速さが命。</div></div>
+        <div style="flex:7;background:color-mix(in srgb,var(--s3) 14%,var(--surface))"><div class="tm">10:00–17:00</div><div class="wh">観光客（海外・国内）</div><div class="wt">飲み比べ・抹茶ラテ・お土産の茶葉。1回の金額が大きい「稼ぎどき」。</div></div>
+        <div style="flex:3;background:color-mix(in srgb,var(--s2) 16%,var(--surface))"><div class="tm">17:00–20:00</div><div class="wh">帰宅・ソラマチ帰り</div><div class="wt">ほうじ茶ラテ、家用の茶葉。</div></div>
+      </div>
+      <h3>お店づくりの4つのこだわり</h3>
+      <div class="grid4">
+        <div class="card"><h4>見える抽出</h4><p style="font-size:13.5px;margin:0">水出しのガラスタンクをカウンターに並べ、お茶ができる様子そのものを「見せる演出」にする。</p></div>
+        <div class="card"><h4>撮りたくなる看板</h4><p style="font-size:13.5px;margin:0">「日本人よ、日本茶を飲め。」の大きな看板を、写真を撮る場所にする。</p></div>
+        <div class="card"><h4>指さしで注文</h4><p style="font-size:13.5px;margin:0">写真と4か国語のメニュー。言葉が通じなくても指さしで頼める。</p></div>
+        <div class="card"><h4>60秒で提供</h4><p style="font-size:13.5px;margin:0">メニューは絞り、作り置きできるものを主役にして、注文から受け取りまで60秒をめざす。</p></div>
+      </div>
+      <p class="note" style="margin-top:12px">開業に必要な手続き：<a class="t" href="#g-kyoka">飲食店営業許可</a>（保健所）、<a class="t" href="#g-eisei">食品衛生責任者</a>の設置、看板の設置許可（区役所）など。いずれも事前相談をしてから進めます。</p>
+    </section>
+
+    <!-- 08 -->
+    <section class="sec" id="brand">
+      <div class="sec-h"><span class="num">08</span><h2>ブランドと集客</h2><p class="lead">広告にたくさんお金をかけず、「お客さまが広めたくなる」仕掛けで集客します。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>合言葉「日本人よ、日本茶を飲め。」は、日本人には呼びかけ、海外の人にはユーモアとして届きます。</li><li>お客さまが「知る→来る→好きになる→また来る→広める」と進む道のりに沿って、打ち手を決めます。</li></ul></div>
+      <h3>ブランドの3つのルール</h3>
+      <div class="grid3">
+        <div class="card"><h4>① 写真1枚で伝わる</h4><p style="font-size:14px;margin:0">看板・カップ・ボトルのどれを撮っても「茶々○園だ」と分かるデザインにする。円（○）をシンボルにする。</p></div>
+        <div class="card"><h4>② 4か国語であたりまえ</h4><p style="font-size:14px;margin:0">日本語・英語・中国語・韓国語。海外の人が「自分のための店だ」と感じられるようにする。</p></div>
+        <div class="card"><h4>③ 本物の物語</h4><p style="font-size:14px;margin:0">どの産地の、誰がつくったお茶か。産地カードで背景を伝え、「日本茶って面白い」と思ってもらう。</p></div>
+      </div>
+      <div class="warn"><div class="lb">早めに決めること：屋号の「○」</div>「茶々○園」の「○」を何と読むか、英語でどう書くかを決めましょう。<b>読み方が決まっていないと、検索やGoogleマップの口コミ、SNSで名前が広がりにくくなります</b>。あわせて、同じ名前がすでに使われていないか<a class="t" href="#g-shohyo">商標</a>を調べ、登録の手続きをします。</div>
+      <h3>お客さまの道のりと打ち手（<a class="t" href="#g-journey">カスタマージャーニー</a>）</h3>
+      <div class="journey">
+        <div class="jstep"><div class="jh"><small>STEP 1</small>知る</div><ul><li>InstagramやTikTokの短い動画</li><li>Googleマップの写真と英語の口コミ（<a class="t" href="#g-meo">MEO</a>）</li><li>ソラマチ側から見える看板</li></ul></div>
+        <div class="jstep"><div class="jh"><small>STEP 2</small>来る</div><ul><li>店頭での試飲</li><li>ベーグル屋さんとのセット割引</li><li>撮影スポットの看板</li></ul></div>
+        <div class="jstep"><div class="jh"><small>STEP 3</small>好きになる</div><ul><li>3種飲み比べと産地カード</li><li>スタッフのひとこと説明</li><li>待たせない提供</li></ul></div>
+        <div class="jstep"><div class="jh"><small>STEP 4</small>また来る</div><ul><li>マイボトルで1杯200円</li><li>LINEのスタンプと季節のお知らせ</li><li>茶葉の<a class="t" href="#g-subsc">定期便</a></li></ul></div>
+        <div class="jstep"><div class="jh"><small>STEP 5</small>広める</div><ul><li>写真を撮りたくなる器と看板</li><li>口コミのお願いカード</li><li>海外の友人へのギフト</li></ul></div>
+      </div>
+      <h3>オープンまでの集客計画</h3>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>時期</th><th>やること</th><th>ねらい</th></tr></thead>
+        <tbody>
+          <tr><td>開業3か月前</td><td>SNSアカウントを開設。試作やお店づくりの様子を発信する</td><td>開業前からファンをつくる</td></tr>
+          <tr><td>開業2か月前</td><td><a class="t" href="#g-popup">ポップアップ出店</a>（イベントなどでの期間限定販売）</td><td>本当に売れるか、いくらなら買うかを確かめる</td></tr>
+          <tr><td>開業1か月前</td><td><a class="t" href="#g-cf">クラウドファンディング</a>で専用ボトルを<a class="t" href="#g-presale">先行販売</a>（目標200万円）</td><td>資金集め・ファンづくり・需要の確認を一度に行う</td></tr>
+          <tr><td>オープン週</td><td>支援者と近所の人向けのプレオープン。店頭での試飲</td><td>最初の口コミを集め、オペレーションを慣らす</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note" style="margin-top:8px">広告・販促費は月10万円（SNS広告4万・撮影や制作3万・試飲や販促物3万）を想定しています。</p>
+    </section>
+
+    <!-- 09 -->
+    <section class="sec" id="model">
+      <div class="sec-h"><span class="num">09</span><h2>もうけの仕組み</h2><p class="lead">「誰から何を仕入れ、誰に何を届け、どこでお金をもらうか」を1枚の図にしました。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>最初の収入源は、店頭のドリンク・マイボトル・茶葉ギフトの3つ。</li><li>店が回り始めたら、インターネット通販・会社向けの販売・ドライブスルーと、収入源を順に増やします。</li></ul></div>
+      <div class="model">
+        <div class="mbox"><h4>仕入れ先</h4>茶農家・茶問屋（静岡・鹿児島・宇治など）<br>牛乳・オーツミルク<br>ボトル・カップのメーカー</div>
+        <div class="flow" aria-hidden="true"><div class="fa">茶葉・材料</div><div class="fa money rev">代金を払う</div></div>
+        <div class="mbox core"><div class="nm">茶々○園</div><ul><li>お茶を淹れる・選ぶ</li><li>マイボトル会員の運営</li><li>ブランドと物語</li></ul></div>
+        <div class="flow" aria-hidden="true"><div class="fa">お茶と体験</div><div class="fa money rev">代金をもらう</div></div>
+        <div class="mbox"><h4>お客さま</h4>海外の観光客<br>近所で働く人・住む人<br>国内観光の家族<br><span class="note">将来：車で移動する人・会社</span></div>
+      </div>
+      <div class="model-sub">
+        <div class="mbox"><h4>パートナー</h4>隣のベーグル屋さん（お互いにお客さまを紹介）、地域の商店、産地の生産者（直接取引で品質と価格を安定）</div>
+        <div class="mbox"><h4>将来の広がり</h4>インターネット通販と茶葉の定期便（2028年〜）、会社向けの販売（2028年〜）、国道沿いのドライブスルー（2030年〜）</div>
+      </div>
+      <h3>収入源（どこでお金をもらうか）</h3>
+      <div class="streams">
+        <div class="stream"><div class="no" style="background:var(--s1)">1</div><div><div class="tt">店頭のドリンク（主力）</div><div class="dd">1杯480〜980円。売上の約4分の3。</div></div><span class="pill g when">1号店から</span></div>
+        <div class="stream"><div class="no" style="background:var(--s1)">2</div><div><div class="tt">マイボトル＋リフィル</div><div class="dd">ボトル2,800円、<a class="t" href="#g-refill">リフィル</a>1杯200円。常連さんの来店を増やす。</div></div><span class="pill g when">1号店から</span></div>
+        <div class="stream"><div class="no" style="background:var(--s1)">3</div><div><div class="tt">茶葉・ギフト（観光客のお土産）</div><div class="dd">1,200円〜。1回の金額が大きく、利益も取りやすい。</div></div><span class="pill g when">1号店から</span></div>
+        <div class="stream"><div class="no" style="background:var(--s3)">4</div><div><div class="tt">インターネット通販・定期便・会社向けの販売</div><div class="dd">観光客が帰国後も買える。会社の休憩室向けの茶葉。</div></div><span class="pill when">2028年〜</span></div>
+        <div class="stream"><div class="no" style="background:var(--s4)">5</div><div><div class="tt">ドライブスルー</div><div class="dd">通勤や夜間に車で移動する人へ。将来は24時間営業。</div></div><span class="pill r when">2030年〜</span></div>
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section class="sec" id="numbers">
+      <div class="sec-h"><span class="num">10</span><h2>収支計画</h2><p class="lead">「いくら売れて、いくらかかって、いくら残るか」。1号店の数字を中心に、5年先まで見通します。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>1号店は<b>1日約140人</b>で黒字。標準の見込み（1日180人）なら、毎月約47万円の利益です。</li><li>開業にかけたお金は、約2年（25か月目）で取り戻せる計算です。</li><li>5年後（2031年）は3店舗＋ドライブスルー1店で、年商約1.7億円をめざします。</li></ul></div>
+
+      <h3>前提（標準ケース）</h3>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>項目</th><th class="num">数字</th><th>考え方</th></tr></thead>
+        <tbody>
+          <tr><td>1日の<a class="t" href="#g-kyakusu">客数</a></td><td class="num">180人</td><td>ドリンク140人＋リフィル30人＋物販のみ10人</td></tr>
+          <tr><td><a class="t" href="#g-tanka">客単価</a></td><td class="num">約611円</td><td>ドリンク平均600円、リフィル200円、物販平均2,000円</td></tr>
+          <tr><td>1日の売上（<a class="t" href="#g-nippan">日販</a>）</td><td class="num">11.0万円</td><td>ドリンク8.4万＋リフィル0.6万＋物販2.0万</td></tr>
+          <tr><td>1か月の売上</td><td class="num">330万円</td><td>営業日30日で計算</td></tr>
+          <tr><td>アルバイトの時給</td><td class="num">1,400円</td><td>東京都の最低賃金は1,226円（2025年10月〜）。今後の上昇を見込んで高めに設定</td></tr>
+        </tbody>
+      </table></div>
+
+      <div class="chart-card">
+        <div class="ct">1日の売上 11万円の内訳</div>
+        <div class="cs">ドリンクが主力。茶葉・ギフトは人数は少なくても金額が大きい。</div>
+        <div class="hbars">
+          <div class="hbar"><div class="lb">ドリンク<small>140人 × 平均600円</small></div><div class="tr"><span style="width:100%"></span></div><div class="vl">84,000円</div></div>
+          <div class="hbar"><div class="lb">茶葉・ギフト・ボトル<small>10人 × 平均2,000円</small></div><div class="tr"><span style="width:23.8%"></span></div><div class="vl">20,000円</div></div>
+          <div class="hbar"><div class="lb">マイボトルのリフィル<small>30杯 × 200円</small></div><div class="tr"><span style="width:7.1%"></span></div><div class="vl">6,000円</div></div>
+        </div>
+      </div>
+
+      <h3>1か月の収支（標準ケース）</h3>
+      <div class="grid2" style="align-items:start">
+        <div class="tbl-wrap"><table class="tbl" style="min-width:0">
+          <thead><tr><th>項目</th><th class="num">金額</th><th class="num">売上比</th></tr></thead>
+          <tbody>
+            <tr class="me"><td><b>売上</b></td><td class="num"><b>330.0万円</b></td><td class="num">100%</td></tr>
+            <tr><td><a class="t" href="#g-genka">原価</a>（茶葉・牛乳・カップなど）</td><td class="num">97.5万円</td><td class="num">29.5%</td></tr>
+            <tr><td><a class="t" href="#g-jinken">人件費</a>（店主25万＋アルバイト80万）</td><td class="num">105.0万円</td><td class="num">31.8%</td></tr>
+            <tr><td>家賃（共益費こみ）</td><td class="num">30.0万円</td><td class="num">9.1%</td></tr>
+            <tr><td>決済手数料</td><td class="num">9.1万円</td><td class="num">2.8%</td></tr>
+            <tr><td>広告・販促</td><td class="num">10.0万円</td><td class="num">3.0%</td></tr>
+            <tr><td>水道光熱</td><td class="num">7.0万円</td><td class="num">2.1%</td></tr>
+            <tr><td>消耗品・雑費</td><td class="num">6.0万円</td><td class="num">1.8%</td></tr>
+            <tr><td>通信・レジ・保険</td><td class="num">5.0万円</td><td class="num">1.5%</td></tr>
+            <tr><td><a class="t" href="#g-genkashokyaku">減価償却</a>（内装・設備）</td><td class="num">13.0万円</td><td class="num">3.9%</td></tr>
+            <tr class="total"><td><a class="t" href="#g-eigyorieki">営業利益</a>（本業のもうけ）</td><td class="num">47.4万円</td><td class="num">14.4%</td></tr>
+          </tbody>
+        </table></div>
+        <div class="chart-card" style="margin:0">
+          <div class="ct">お客さまが払う600円の使いみち</div>
+          <div class="cs">売上を1杯600円に置きかえると、利益として残るのは約86円です。</div>
+          <div class="cup" style="margin-top:14px" role="img" aria-label="600円の内訳：原価177円、人件費191円、家賃55円、その他経費67円、減価償却24円、利益86円">
+            <div style="flex:177;background:var(--c1)"><span>原価</span></div>
+            <div style="flex:191;background:var(--c2)"><span>人件費</span></div>
+            <div style="flex:55;background:var(--c3)"></div>
+            <div style="flex:67;background:var(--c4);color:#fff"></div>
+            <div style="flex:24;background:var(--line-2)"></div>
+            <div class="p" style="flex:86"><span>利益</span></div>
+          </div>
+          <div class="cup-legend">
+            <div><i style="background:var(--c1)"></i>原価<b>177円</b></div>
+            <div><i style="background:var(--c2)"></i>人件費<b>191円</b></div>
+            <div><i style="background:var(--c3)"></i>家賃<b>55円</b></div>
+            <div><i style="background:var(--c4)"></i>その他経費<b>67円</b></div>
+            <div><i style="background:var(--line-2)"></i>減価償却<b>24円</b></div>
+            <div><i style="background:var(--pos)"></i><b style="margin-left:0">利益</b><b>86円</b></div>
+          </div>
+          <p class="note" style="margin:12px 0 0">原価と人件費を合わせた<a class="t" href="#g-fl">FL比率</a>は61.3%。飲食店の目安とされる60%前後に収まっています。</p>
+        </div>
+      </div>
+
+      <h3>何人来れば黒字になる？（損益分岐点）</h3>
+      <div class="chart-card">
+        <div class="ct">1日の客数と、1か月の売上・コスト</div>
+        <div class="cs">緑の線（売上）が青い線（コスト合計）を上回れば黒字です。2本が交わる<b>1日約140人</b>が<a class="t" href="#g-bep">損益分岐点</a>です。グラフにカーソルを合わせると（スマホではタップすると）数字が出ます。</div>
+        <div class="legend"><span><i class="ln" style="background:var(--s1)"></i>売上</span><span><i class="ln" style="background:var(--s3)"></i>コスト合計（家賃や人件費などの<a class="t" href="#g-kotei">固定費</a>＋材料費などの<a class="t" href="#g-hendo">変動費</a>）</span></div>
+        <div class="chart" id="chartBep" data-label="損益分岐点のグラフ"></div>
+        <details class="tv"><summary>表で見る</summary><div class="tbl-wrap"><table class="tbl" id="tblBep"></table></div></details>
+      </div>
+
+      <h3>3つのシナリオ（うまくいかない場合も考える）</h3>
+      <div class="chart-card">
+        <div class="ct">1か月の営業利益（お店が安定したあと）</div>
+        <div class="cs">中心の線より右が黒字、左が赤字です。</div>
+        <div class="scen" id="scen">
+          <div class="sc"><div class="lb"><b>悲観ケース</b><small>1日120人・売上220万円</small></div><div class="track"><div class="zero"></div><div class="bar neg" style="right:70%;width:7.3%"></div><span class="out" style="right:calc(77.3% + 6px)">−27万円</span></div></div>
+          <div class="sc"><div class="lb"><b>標準ケース</b><small>1日180人・売上330万円</small></div><div class="track"><div class="zero"></div><div class="bar pos" style="left:30%;width:12.8%"></div><span class="out" style="left:calc(42.8% + 6px)">＋47万円</span></div></div>
+          <div class="sc"><div class="lb"><b>楽観ケース</b><small>1日250人・売上458万円</small></div><div class="track"><div class="zero"></div><div class="bar pos" style="left:30%;width:30.8%"></div><span class="out" style="left:calc(60.8% + 6px)">＋114万円</span></div></div>
+        </div>
+        <p class="note" style="margin:12px 0 0">楽観ケースは、混雑に合わせてスタッフを増やす費用（月20万円）を差し引いています。悲観ケースでも、手元の<a class="t" href="#g-unten">運転資金</a>450万円で約1年は持ちこたえられる設計です（11章）。</p>
+      </div>
+
+      <h3>開業に必要なお金（初期投資）と、取り戻すまでの道のり</h3>
+      <div class="grid2" style="align-items:start">
+        <div class="chart-card" style="margin:0">
+          <div class="ct"><a class="t" href="#g-shoki">初期投資</a> 合計 約1,960万円</div>
+          <div class="cs">いちばん大きいのは内装工事。運転資金は「もしも」に備える手元のお金です。</div>
+          <div class="hbars" id="invBars"></div>
+          <p class="note" style="margin:10px 0 0">※<a class="t" href="#g-hoshokin">保証金</a>は退去時に一部が戻るお金、運転資金は使わなければ残るお金です。</p>
+        </div>
+        <div class="chart-card" style="margin:0">
+          <div class="ct">累計の手元資金の動き（<a class="t" href="#g-jcurve">Jカーブ</a>）</div>
+          <div class="cs">開業時に出ていった約1,210万円を、毎月の利益で取り戻していきます。0を超えた月が<a class="t" href="#g-kaishu">投資回収</a>です。</div>
+          <div class="chart" id="chartJ" data-label="累計キャッシュフローのグラフ"></div>
+          <details class="tv"><summary>表で見る</summary><div class="tbl-wrap"><table class="tbl" id="tblJ"></table></div></details>
+        </div>
+      </div>
+      <p class="note">Jカーブは税金・借入れの返済前、運転資金と保証金を除いた金額で計算しています。開業直後は「オープン効果」で売上が高く出て、いったん下がり、1年かけて標準ケースに近づく想定です。</p>
+
+      <h3>5年間の売上計画（会社全体）</h3>
+      <div class="chart-card">
+        <div class="ct">事業別の年間売上（2027〜2031年）</div>
+        <div class="cs">1号店が土台になり、2029年から都内の2・3号店、2030年からドライブスルーが加わります。</div>
+        <div class="legend"><span><i style="background:var(--s1)"></i>押上1号店</span><span><i style="background:var(--s2)"></i>都内2・3号店</span><span><i style="background:var(--s3)"></i>通販・会社向けの販売</span><span><i style="background:var(--s4)"></i>夜間・ドライブスルー</span></div>
+        <div class="chart" id="chart5y" data-label="5年間の売上計画のグラフ"></div>
+        <details class="tv"><summary>表で見る</summary><div class="tbl-wrap"><table class="tbl" id="tbl5y"></table></div></details>
+      </div>
+      <div class="chart-card">
+        <div class="ct">会社全体の営業利益（2027〜2031年）</div>
+        <div class="cs">新しい店を出す年は、開業費用でいったん利益が減ります。2027年は開業準備費のぶん、少し赤字になる見込みです。</div>
+        <div class="chart" id="chartProfit" data-label="5年間の営業利益のグラフ"></div>
+      </div>
+      <p class="note">5年計画は、本部の費用（採用・経理などの人件費。2028年100万円→2031年800万円）を差し引いた数字です。ドライブスルーはコンテナ型の小さな建物を想定しています（13章）。</p>
+    </section>
+
+    <!-- 11 -->
+    <section class="sec" id="funding">
+      <div class="sec-h"><span class="num">11</span><h2>資金計画</h2><p class="lead">1号店に必要な約1,960万円を、自己資金・借入れ・クラウドファンディングなどで用意します。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>中心は、国が出資する銀行「<a class="t" href="#g-jfc">日本政策金融公庫</a>」の<a class="t" href="#g-sogyo">創業融資</a>（1,200万円）。</li><li>クラウドファンディングは、資金集めと同時に「本当に欲しい人がいるか」の確認にもなります。</li></ul></div>
+      <div class="chart-card">
+        <div class="ct">お金の集め方（合計 約1,960万円）</div>
+        <div class="hbars" id="fundBars"></div>
+      </div>
+      <div class="grid2">
+        <div class="card"><h4>返済の見通し</h4><p style="font-size:14px;margin:0">1,200万円を7年で返すと、元金の返済は月約14万円（ほかに利息）。標準ケースの毎月の手元資金（約60万円）から返済しても、十分に残る計算です。</p></div>
+        <div class="card"><h4>2号店以降のお金</h4><p style="font-size:14px;margin:0">1号店の利益と、実績をもとにした追加の借入れでまかないます。ドライブスルーは金額が大きいため、リース（設備を借りる契約）や出資も検討します。</p></div>
+      </div>
+      <p class="note" style="margin-top:10px">補助金は採択されるかどうかが分からず、後払いのため、なくても資金が回る計画にしています。</p>
+    </section>
+
+    <!-- 12 -->
+    <section class="sec" id="roadmap">
+      <div class="sec-h"><span class="num">12</span><h2>ロードマップ</h2><p class="lead">4つの段階（<a class="t" href="#g-phase">フェーズ</a>）で進めます。次に進むかどうかは、決めておいた数字（合格ライン）で判断します。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>いきなり全部はやりません。<b>1つの段階で合格ラインを超えたら、次の段階へ</b>進みます。</li><li>下の<a class="t" href="#g-gantt">ガントチャート</a>は横に動かせます。◆は大事な節目（<a class="t" href="#g-milestone">マイルストーン</a>）です。</li></ul></div>
+      <div class="phases">
+        <div class="phase" style="border-top-color:var(--s0)"><span class="pn">フェーズ0</span><span class="pt">準備と検証</span><span class="pd">2026年12月〜2027年5月</span><span style="font-size:13.5px;color:var(--ink-2)">名前・物件・お金・メニューを固め、テスト販売で「売れるか」を確かめる。</span><div class="go"><b>次に進む合格ライン</b>テスト販売で1日100杯以上／クラファン目標を達成／融資が決定</div></div>
+        <div class="phase" style="border-top-color:var(--s1)"><span class="pn">フェーズ1</span><span class="pt">1号店で勝ちパターンをつくる</span><span class="pd">2027年6月〜2028年12月</span><span style="font-size:13.5px;color:var(--ink-2)">押上1号店を開業。マイボトル会員を育て、運営の型をつくる。</span><div class="go"><b>次に進む合格ライン</b>1日180人を3か月連続／FL比率62%以下／店を任せられる店長がいる</div></div>
+        <div class="phase" style="border-top-color:var(--s2)"><span class="pn">フェーズ2</span><span class="pt">都内に広げる</span><span class="pd">2028年7月〜2031年</span><span style="font-size:13.5px;color:var(--ink-2)">2号店（2029年4月）・3号店（2031年4月）。通販と会社向けの販売も開始。</span><div class="go"><b>次に進む合格ライン</b>2号店が開業6か月以内に毎月黒字</div></div>
+        <div class="phase" style="border-top-color:var(--s4)"><span class="pn">フェーズ3</span><span class="pt">夜とクルマの市場へ</span><span class="pd">2028年7月〜2031年</span><span style="font-size:13.5px;color:var(--ink-2)">キッチンカーで深夜の需要を試し、2030年4月にドライブスルー1号店。</span><div class="go"><b>次に進む合格ライン</b>ドライブスルーで1日215台以上（黒字ライン）</div></div>
+      </div>
+      <div class="chart-card" style="padding-bottom:16px">
+        <div class="ct">ガントチャート（2026年11月〜2031年12月）</div>
+        <div class="cs">横棒は作業の期間、◆は節目、赤い縦線は今日（2026年11月15日）です。バーにカーソルを合わせると期間が出ます。</div>
+        <div class="legend"><span><i style="background:var(--s0)"></i>準備・検証</span><span><i style="background:var(--s1)"></i>押上1号店</span><span><i style="background:var(--s3)"></i>通販・会社向け</span><span><i style="background:var(--s2)"></i>都内2・3号店</span><span><i style="background:var(--s4)"></i>夜間・ドライブスルー</span><span><i class="dia" style="background:var(--ink-2)"></i>マイルストーン</span><span><i class="today" style="background:var(--accent)"></i>今日</span></div>
+        <div class="gantt-scroll" id="ganttScroll"><div class="gantt" id="gantt" role="table" aria-label="ガントチャート"></div></div>
+        <p class="note" style="margin:8px 0 0">スマホでは表を左右にスワイプすると、先の予定まで見られます。</p>
+      </div>
+    </section>
+
+    <!-- 13 -->
+    <section class="sec" id="drive">
+      <div class="sec-h"><span class="num">13</span><h2>ドライブスルー構想</h2><p class="lead">「出勤前の60秒で、おいしいお茶を」。将来の大きな柱ですが、1号店とはまったく別のビジネスとして慎重に進めます。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>郊外の国道沿い、車社会、深夜のオペレーション。押上の店とは<b>お客さまも、もうけ方も、必要なお金もちがいます</b>。</li><li>まず<a class="t" href="#g-kitchencar">キッチンカー</a>で深夜の需要を試し、次に小さな<a class="t" href="#g-container">コンテナ型</a>の店で始め、条件を満たしたら24時間にします。</li></ul></div>
+      <h3>最速で届ける流れ</h3>
+      <div class="dt-flow">
+        <div class="step"><div class="no">1</div><div class="tt">スマホで事前注文</div><div class="dd">家や信号待ちの前に、アプリで注文と支払い</div><span class="tm">0秒</span></div>
+        <div class="step"><div class="no">2</div><div class="tt">レーンに入る</div><div class="dd">専用レーンで、注文番号を自動で照合</div><span class="tm">〜15秒</span></div>
+        <div class="step"><div class="no">3</div><div class="tt">窓口で受け取る</div><div class="dd">作り置きの水出し茶を注ぐだけ。温かいお茶は自動の抽出機で</div><span class="tm">〜45秒</span></div>
+        <div class="step"><div class="no">4</div><div class="tt">出発</div><div class="dd">合計60秒が目標。メニューは6品に絞る</div><span class="tm">60秒</span></div>
+      </div>
+      <h3>3段階で進める</h3>
+      <div class="steps3">
+        <div class="s3"><div class="sn">STEP 1</div><div class="st">夜のキッチンカーで試す</div><div class="sd">国道沿いのガソリンスタンドや駐車場のオーナーと組み、夜22時〜翌2時に試験販売。何時に、何人が、何を買うかを記録する。</div><div class="sp">2028年7月〜2029年12月</div></div>
+        <div class="s3"><div class="sn">STEP 2</div><div class="st">コンテナ型のドライブスルー</div><div class="sd">建設費を抑えられる小さな建物で開業。まずは朝5時〜深夜1時の営業。初期投資は約3,000万円を想定。</div><div class="sp">2030年4月 開業</div></div>
+        <div class="s3"><div class="sn">STEP 3</div><div class="st">24時間営業へ</div><div class="sd">深夜1〜5時の売上が、その時間の人件費などを上回ることを数字で確かめてから切り替える。</div><div class="sp">2030年10月〜（条件つき）</div></div>
+      </div>
+      <div class="rule">
+        <div class="big">45<small>台以上</small></div>
+        <div><b>24時間にするかどうかの判断ルール</b><br><span style="font-size:14px;color:var(--ink-2)">深夜1〜5時の4時間に、平均45台以上来るなら24時間にします。<br>計算：深夜の人件費は時給に25%上乗せ（<a class="t" href="#g-shinya">深夜割増</a>）で2人×4時間＝約1.4万円、防犯や光熱費を足して1晩約1.6万円。1杯550円で利益として残るのは約65%なので、約45台分の売上が必要です。</span></div>
+      </div>
+      <div class="grid3" style="margin-top:14px">
+        <div class="stat"><div class="k">初期投資（コンテナ型）</div><div class="v">約3,000<small>万円</small></div><div class="d">建物・設備・外構。土地は借りる前提。</div></div>
+        <div class="stat"><div class="k">黒字になるライン</div><div class="v">1日 約215<small>台</small></div><div class="d">1台あたり平均550円。毎月の固定費は約230万円。</div></div>
+        <div class="stat"><div class="k">目標</div><div class="v">1日 300<small>台</small></div><div class="d">このとき月の利益は約90万円。投資は約2年強で回収。</div></div>
+      </div>
+    </section>
+
+    <!-- 14 -->
+    <section class="sec" id="risk">
+      <div class="sec-h"><span class="num">14</span><h2>リスクと対策</h2><p class="lead">起こりうる「まずいこと」を先に並べ、手を打っておきます。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>特に大きいのは、<b>観光客の急な減少</b>と<b>抹茶・茶葉の値上がり</b>、そして<b>人手不足</b>の3つです。</li><li>どれも「1つに頼りすぎない」ことで、影響を小さくできます。</li></ul></div>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>リスク</th><th>影響</th><th>起こりやすさ</th><th>対策</th></tr></thead>
+        <tbody>
+          <tr><td><b>観光客が急に減る</b><br><span class="note">為替や国際情勢で変わる。例：2025年12月、中国からの訪日客は前年同月より45%以上減った</span></td><td><span class="lv hi">▲ 大</span></td><td><span class="lv md">● 中</span></td><td>地元の常連さん（マイボトル会員）の売上を全体の4割以上に育て、観光客だけに頼らない。</td></tr>
+          <tr><td><b>抹茶・茶葉の値上がり</b><br><span class="note">2025年産の抹茶は、最上級品で約75%値上がりしたと報じられている</span></td><td><span class="lv hi">▲ 大</span></td><td><span class="lv hi">▲ 高</span></td><td>主役は煎茶・ほうじ茶の水出し。産地と直接契約して価格を安定させる。抹茶メニューは値段に反映する。</td></tr>
+          <tr><td><b>人手不足・人件費の上昇</b><br><span class="note">東京都の最低賃金は1,226円（2025年10月）と上がり続けている</span></td><td><span class="lv hi">▲ 大</span></td><td><span class="lv hi">▲ 高</span></td><td>メニューを絞った簡単なオペレーション。事前注文の仕組み。日本茶の資格取得の支援など、時給以外の魅力をつくる。</td></tr>
+          <tr><td><b>季節による売上の差</b><br><span class="note">冬は水出しが売れにくい</span></td><td><span class="lv md">● 中</span></td><td><span class="lv hi">▲ 高</span></td><td>冬は温かいほうじ茶ラテや和紅茶を主役に。年末年始はギフトで稼ぐ。</td></tr>
+          <tr><td><b>深夜営業の安全と費用</b></td><td><span class="lv hi">▲ 大</span></td><td><span class="lv md">● 中</span></td><td>営業時間を段階的にのばす。深夜は2人体制。防犯カメラや通報設備を備える。</td></tr>
+          <tr><td><b>競合のまね・新規参入</b></td><td><span class="lv md">● 中</span></td><td><span class="lv md">● 中</span></td><td>会員の仕組みとブランド（言葉と体験）で先に走る。お客さまのデータを改善に生かし続ける。</td></tr>
+          <tr><td><b>持ち込みボトルの衛生トラブル</b></td><td><span class="lv hi">▲ 大</span></td><td><span class="lv lo">▼ 低</span></td><td>洗浄済みのボトルに限る。注ぎ口を触れさせない。店頭に洗浄機。保健所に事前相談。</td></tr>
+          <tr><td><b>店名が使えない（商標）</b></td><td><span class="lv hi">▲ 大</span></td><td><span class="lv lo">▼ 低</span></td><td>開業前に商標を調べて出願する。看板やボトルをつくる前に必ず済ませる。</td></tr>
+          <tr><td><b>隣のベーグル屋さんの閉店・移転</b></td><td><span class="lv md">● 中</span></td><td><span class="lv lo">▼ 低</span></td><td>コラボは書面で取り決める。1店舗だけに頼らず、地域のほかのお店とも組む。</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <!-- 15 -->
+    <section class="sec" id="kpi">
+      <div class="sec-h"><span class="num">15</span><h2>成功の物差し（KPI）</h2><p class="lead">「うまくいっているか」を、感覚ではなく数字で判断するための目印です。</p></div>
+      <div class="point"><div class="lb">この章のポイント</div><ul><li>毎日見る数字は「客数」と「客単価」の2つだけ。この2つで売上が決まります。</li><li>数字が目標を下回ったら、早めに原因を探して手を打ちます（<a class="t" href="#g-kpi">KPI</a>）。</li></ul></div>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>指標</th><th>目標</th><th>見る頻度</th><th>なぜ見るか</th></tr></thead>
+        <tbody>
+          <tr><td><b>1日の客数</b></td><td>180人（黒字ラインは140人）</td><td>毎日</td><td>売上のいちばんの土台。140人を下回る日が続いたら要注意。</td></tr>
+          <tr><td><b>客単価</b></td><td>約610円</td><td>毎日</td><td>セットやお土産の提案がうまくいっているかが分かる。</td></tr>
+          <tr><td><b>FL比率</b></td><td>62%以下</td><td>毎月</td><td>材料費と人件費のかけすぎを防ぐ。</td></tr>
+          <tr><td><b>マイボトルの販売本数</b></td><td>開業1年で800本</td><td>毎月</td><td>常連さんの数を表す。</td></tr>
+          <tr><td><b>リフィルの杯数</b></td><td>1日30杯</td><td>毎日</td><td>常連さんが本当に通ってくれているか。</td></tr>
+          <tr><td><b>LINEの友だち数</b></td><td>開業1年で3,000人</td><td>毎月</td><td>お知らせを直接届けられるお客さまの数。</td></tr>
+          <tr><td><b>Googleマップの評価</b></td><td>★4.5以上・口コミ300件（1年）</td><td>毎週</td><td>観光客がお店を選ぶ決め手になる。</td></tr>
+          <tr><td><b>海外のお客さまの割合</b></td><td>30〜50%</td><td>毎月</td><td>多すぎても少なすぎても危ない。偏りを早めに知る。</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <!-- 16 -->
+    <section class="sec" id="review">
+      <div class="sec-h"><span class="num">16</span><h2>責任者の視点（率直な評価）</h2><p class="lead">15年間、新規事業の立ち上げに関わってきた立場から、良いところと危ないところを正直に書きます。</p></div>
+      <div class="verdict" style="margin:0 0 18px"><div class="badge"><small>総合判断</small>条件付きで<br>GO</div><div>コンセプトは時代に合っていて、立地も強い。ただし<b>「お店を1つ成功させること」と「チェーンやドライブスルーにすること」は別の難しさ</b>があります。まずは1号店に全力を注ぎ、数字で証明してから広げてください。</div></div>
+      <div class="rv">
+        <div class="card"><h4><span class="pill g">強み</span>この事業の良いところ</h4><ol>
+          <li><b>立地が強い</b>ソラマチの目の前で、観光客・通勤の人・家族の流れが交わる。隣のベーグル屋さんとの組み合わせも自然。</li>
+          <li><b>追い風が吹いている</b>訪日客は過去最高、抹茶ブームで日本茶への関心は世界的に高い。</li>
+          <li><b>常連化の仕組みがある</b>マイボトル200円は、安さと環境配慮と来店回数アップを一度に満たす、よくできた仕組み。</li>
+          <li><b>創業者の実体験がある</b>「飽きた」「開いてない」という自分の不満は、お客さまへの説得力になる。</li>
+        </ol></div>
+        <div class="card"><h4><span class="pill r">懸念</span>注意すべきところ</h4><ol>
+          <li><b>「第二のスタバ」は目標であって、まだ戦略ではない</b>スタバの強みは商品よりも「どの店でも同じ居心地」。茶々○園らしい体験を言葉にし、マニュアルにする必要がある。</li>
+          <li><b>1号店とドライブスルーは別のビジネス</b>立地・お客さま・お金のかかり方がまったく違う。同時に追うと両方が中途半端になる。</li>
+          <li><b>観光客への依存</b>海外情勢で一気に客足が変わる。地元の常連さんを売上の4割以上に育てたい。</li>
+          <li><b>抹茶に頼らない</b>抹茶は値上がりと品薄が続いている。主役は水出しの煎茶とほうじ茶に。</li>
+        </ol></div>
+      </div>
+      <h3>開業前に決めておくべきこと</h3>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>決めること</th><th>なぜ大事か</th></tr></thead>
+        <tbody>
+          <tr><td><b>屋号の読み方と英語表記</b></td><td>口コミ・検索・看板のすべての土台になる。</td></tr>
+          <tr><td><b>自分が店に立つか</b></td><td>最初の1年は店主が店に立つほど、品質と人件費の両方が良くなる。</td></tr>
+          <tr><td><b>自己資金をいくら出せるか</b></td><td>融資の審査では、自己資金の多さが重視される。</td></tr>
+          <tr><td><b>やめる・見直すライン（<a class="t" href="#g-tettai">撤退基準</a>）</b></td><td>先に決めておけば、損失が大きくなる前に冷静に判断できる。</td></tr>
+        </tbody>
+      </table></div>
+      <div class="warn"><div class="lb">見直しのライン（案）</div>次のどれかに当てはまったら、立地やコンセプトをいったん見直します：① テスト販売で1日平均100杯に届かない　② クラウドファンディングが目標の50%未満　③ 物件の家賃が月30万円を大きく超える　④ 開業6か月たっても1日140人に届かない。</div>
+    </section>
+
+    <!-- 17 -->
+    <section class="sec" id="next">
+      <div class="sec-h"><span class="num">17</span><h2>最初の90日でやること</h2><p class="lead">2026年12月〜2027年2月の具体的なやることリストです。チェックを入れると、このブラウザに記録されます。</p></div>
+      <div class="cl" id="checklist">
+        <div class="card"><h4>12月</h4><div class="when">土台を決める</div>
+          <label><input type="checkbox" data-k="c1"><span>屋号「茶々○園」の読み方と英語表記を決める</span></label>
+          <label><input type="checkbox" data-k="c2"><span>同じ名前の商標がないか調べる（特許庁の検索サービス「J-PlatPat」）</span></label>
+          <label><input type="checkbox" data-k="c3"><span>ベーグル屋さん隣の物件の空き状況・家賃・契約条件を確認する</span></label>
+          <label><input type="checkbox" data-k="c4"><span>出せる自己資金の額を決める</span></label>
+          <label><input type="checkbox" data-k="c5"><span>ベーグル屋さんにあいさつし、コラボの可能性を話す</span></label>
+        </div>
+        <div class="card"><h4>1月</h4><div class="when">お客さまの声を聞き、計画を固める</div>
+          <label><input type="checkbox" data-k="c6"><span>30人にインタビュー（観光客10人・近所で働く人10人・家族や知人10人）</span></label>
+          <label><input type="checkbox" data-k="c7"><span>メニューを10品試作し、5品に絞る。1杯ごとの原価を計算する</span></label>
+          <label><input type="checkbox" data-k="c8"><span>日本政策金融公庫に相談し、創業計画書をつくる</span></label>
+          <label><input type="checkbox" data-k="c9"><span>保健所に事前相談する（ボトル持ち込みのルールも）</span></label>
+        </div>
+        <div class="card"><h4>2月</h4><div class="when">小さく売ってみる</div>
+          <label><input type="checkbox" data-k="c10"><span>ポップアップで2〜3日テスト販売。1日100杯が目安</span></label>
+          <label><input type="checkbox" data-k="c11"><span>クラウドファンディングのページを準備する</span></label>
+          <label><input type="checkbox" data-k="c12"><span>内装業者3社から見積もりを取る</span></label>
+          <label><input type="checkbox" data-k="c13"><span>結果を数字で振り返り、「GO」か「見直し」かを決める</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 18 -->
+    <section class="sec" id="glossary">
+      <div class="sec-h"><span class="num">18</span><h2>用語集</h2><p class="lead">この資料に出てくる専門用語を、できるだけやさしい言葉で解説します。</p></div>
+      <div class="gl-tools">
+        <input type="search" id="glSearch" placeholder="用語をさがす（例：損益分岐点）" aria-label="用語をさがす">
+        <div class="gl-cats" id="glCats" role="group" aria-label="分類で絞り込む"></div>
+      </div>
+      <div id="glBody"></div>
+      <p class="gl-empty" id="glEmpty">該当する用語がありません。</p>
+    </section>
+
+    <section class="sec" id="sources">
+      <div class="sec-h"><span class="num">—</span><h2>出典と前提</h2><p class="lead">数字の根拠と、計画を立てるうえで置いた前提です。</p></div>
+      <h3>出典</h3>
+      <ol class="sources">
+        <li>日本政府観光局（JNTO）「訪日外客数（2025年12月および年間推計値）」2026年1月21日 — <a href="https://www.jnto.go.jp/news/press/20260121_monthly.html" target="_blank" rel="noopener">jnto.go.jp</a></li>
+        <li>観光庁長官会見（2025年の訪日客の消費額 9兆4,559億円）— <a href="https://honichi.com/news/2026/01/23/chokankaiken/" target="_blank" rel="noopener">訪日ラボ</a></li>
+        <li>2025年の緑茶輸出額（約721億円、2024年は364億円）— <a href="https://www.nippon.com/ja/japan-data/h02743/" target="_blank" rel="noopener">nippon.com</a>／<a href="https://www.maff.go.jp/j/wpaper/w_maff/r7/r7_h/trend/part1/chap4/c4_1_00.html" target="_blank" rel="noopener">農林水産省 食料・農業・農村白書</a></li>
+        <li>東京ソラマチ 2025年度の売上高600億円（3年連続で過去最高）— <a href="https://prtimes.jp/main/html/rd/p/000000429.000041446.html" target="_blank" rel="noopener">PR TIMES</a></li>
+        <li>東京スカイツリー 2023年度の海外からの来場者比率（約30%）— <a href="https://fpcj.jp/wp/wp-content/uploads/2024/09/8c9555b31386b37c66d61c3bec2fe0ff.pdf" target="_blank" rel="noopener">FPCJ掲載資料</a></li>
+        <li>家庭の緑茶・茶飲料の支出の推移 — <a href="https://www.maff.go.jp/j/seisan/tokusan/cha/attach/pdf/ocha-203.pdf" target="_blank" rel="noopener">農林水産省「茶をめぐる情勢」</a></li>
+        <li>スターバックス コーヒー ジャパンの国内店舗数（2,011店、2025年3月末）— <a href="https://digitalpr.jp/r/110629" target="_blank" rel="noopener">Digital PR Platform</a></li>
+        <li>nana's green tea の沿革と海外展開の目標 — <a href="https://prtimes.jp/main/html/rd/p/000000152.000042376.html" target="_blank" rel="noopener">PR TIMES</a></li>
+        <li>東京都の最低賃金（1,226円、2025年10月3日から）— <a href="https://sogyotecho.jp/saiteichingin-2025/" target="_blank" rel="noopener">創業手帳</a></li>
+        <li>抹茶価格の上昇（2025年産の最上級品で約75%高）— <a href="https://abc7news.com/post/how-matcha-prices-popular-powdered-tea-soar-due-global-demand/17827300/" target="_blank" rel="noopener">AP通信（ABC7）</a></li>
+        <li>2025年12月の市場別訪日客数（中国は前年同月比45%超の減少）— <a href="https://yamatogokoro.jp/inbound_data/59127/" target="_blank" rel="noopener">やまとごころ.jp</a></li>
+      </ol>
+      <h3>計画の前提</h3>
+      <ul style="font-size:14px;color:var(--ink-2)">
+        <li>数字はすべて2026年11月時点の仮説です。物件・見積もり・テスト販売の結果が出たら更新します。</li>
+        <li>家賃（月30万円）、内装費（坪60万円）、保証金（家賃10か月分）は、都内の小さな飲食店の一般的な水準から置いた目安で、実際の物件条件で変わります。</li>
+        <li>収支は税金・借入れの返済の前の数字です。消費税は売上・費用ともに税込みで計算しています。</li>
+        <li>1か月の営業日は30日、キャッシュレス決済の比率は85%（手数料3.24%）としています。</li>
+        <li>ドライブスルーはコンテナ型で、土地は事業用に借りる前提です。立地や規模によって投資額は大きく変わります。</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<footer>
+  茶々○園 事業計画書（2026年11月版）｜ この資料の数字は計画上の目安であり、将来の成果を約束するものではありません。<br>
+  このページは <a class="t" href="#g-ghpages">GitHub Pages</a> で公開しています。
+</footer>
+
+<div class="term-tip" id="termTip" role="tooltip"></div>
+<button class="back-btn" id="backBtn" type="button">↩ 読んでいた場所に戻る</button>
+
+<script>
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+  const txt = (parent, x, y, s, cls, attrs = {}) => { const t = el('text', Object.assign({ x, y, class: cls }, attrs), parent); t.textContent = s; return t; };
+  const nf = v => Math.round(v).toLocaleString('ja-JP');
+  const man = v => (v < 0 ? '−' : '') + nf(Math.abs(v)) + '万円';
+  const manS = v => (v < 0 ? '−' : '＋') + nf(Math.abs(v)) + '万円';
+  const oku = v => v >= 10000 ? (v / 10000).toFixed(2).replace(/\.?0+$/, '') + '億円' : nf(v) + '万円';
+
+  /* ---------------- model ---------------- */
+  const TICKET = 611, DAYS = 30, VAR = 0.323, FIXED = 176, FIXED_CASH = 163;
+  const salesAt = c => c * TICKET * DAYS / 10000;           // 万円/月
+  const costAt = c => FIXED + salesAt(c) * VAR;
+  const BEP = FIXED / (1 - VAR) / (TICKET * DAYS / 10000);  // ≒141.8人
+
+  const ramp = [300, 250, 240, 255, 270, 285, 300, 310, 320, 325, 330, 330];
+  const monthSales = m => m <= 12 ? ramp[m - 1] : m <= 24 ? 330 : 336.6;
+  const INIT = 1210;
+  const jcurve = [-INIT];
+  for (let m = 1; m <= 36; m++) jcurve.push(jcurve[m - 1] + monthSales(m) * (1 - VAR) - FIXED_CASH);
+  const payback = jcurve.findIndex(v => v >= 0);
+  const monthLabel = m => { const d = new Date(2027, 4 + m, 1); return d.getFullYear() + '年' + (d.getMonth() + 1) + '月'; };
+
+  const years = ['2027', '2028', '2029', '2030', '2031'];
+  const fiveY = [
+    { name: '押上1号店', color: '--s1', v: [1900, 3930, 4010, 4090, 4170] },
+    { name: '都内2・3号店', color: '--s2', v: [0, 0, 2520, 3600, 6220] },
+    { name: '通販・会社向け', color: '--s3', v: [0, 150, 500, 800, 1200] },
+    { name: '夜間・ドライブスルー', color: '--s4', v: [0, 150, 400, 3420, 5760] },
+  ];
+  const profit = [-100, 390, 370, 470, 1460];
+  const totals = years.map((_, i) => fiveY.reduce((a, s) => a + s.v[i], 0));
+
+  /* ---------------- tooltip helpers ---------------- */
+  function tipFor(box) { let t = box.querySelector('.tip'); if (!t) { t = document.createElement('div'); t.className = 'tip'; box.appendChild(t); } return t; }
+  function showTip(box, html, x, y) {
+    const t = tipFor(box); t.innerHTML = html; t.style.opacity = 1;
+    const bw = box.clientWidth, tw = t.offsetWidth, th = t.offsetHeight;
+    let left = x + 14; if (left + tw > bw) left = x - tw - 14; if (left < 0) left = Math.max(0, Math.min(bw - tw, x - tw / 2));
+    let top = y - th - 12; if (top < 0) top = y + 14;
+    t.style.left = left + 'px'; t.style.top = top + 'px';
+  }
+  function hideTip(box) { const t = box.querySelector('.tip'); if (t) t.style.opacity = 0; }
+  const row = (sw, k, v) => `<div class="r"><span>${sw ? `<i class="sw" style="background:${sw}"></i>` : ''}${k}</span><span>${v}</span></div>`;
+
+  /* ---------------- line chart ---------------- */
+  function lineChart(box, o) {
+    box.querySelector('svg')?.remove();
+    const W = box.clientWidth, H = o.height || 300, narrow = W < 520;
+    const m = { t: 22, r: o.series.length > 1 ? (narrow ? 70 : 96) : 16, b: 40, l: narrow ? 46 : 58 };
+    const svg = el('svg', { width: W, height: H, role: 'img', 'aria-label': box.dataset.label || '' });
+    box.prepend(svg);
+    const iw = W - m.l - m.r, ih = H - m.t - m.b, xs = o.xs;
+    const x = v => m.l + (v - xs[0]) / (xs[xs.length - 1] - xs[0]) * iw;
+    const y = v => m.t + (1 - (v - o.yMin) / (o.yMax - o.yMin)) * ih;
+    (o.bands || []).forEach(b => {
+      el('rect', { x: x(b.from), y: m.t, width: Math.max(0, x(b.to) - x(b.from)), height: ih, fill: cssv(b.fill) }, svg);
+      if (b.label) txt(svg, (x(b.from) + x(b.to)) / 2, m.t + ih - 10, b.label, 'band-label', { 'text-anchor': 'middle', fill: cssv(b.ink) });
+    });
+    for (let v = o.yMin; v <= o.yMax + 1e-6; v += o.yStep) {
+      el('line', { x1: m.l, x2: m.l + iw, y1: y(v), y2: y(v), stroke: v === 0 ? cssv('--axis') : cssv('--grid'), 'stroke-width': v === 0 ? 1.5 : 1 }, svg);
+      txt(svg, m.l - 8, y(v) + 4, nf(v), 'tick', { 'text-anchor': 'end' });
+    }
+    txt(svg, m.l - 8, m.t - 9, o.yUnit, 'unit', { 'text-anchor': 'end' });
+    o.xTicks.forEach(v => txt(svg, x(v), m.t + ih + 22, o.xFmt(v), 'tick', { 'text-anchor': 'middle' }));
+    (o.markers || []).forEach(mk => {
+      el('line', { x1: x(mk.x), x2: x(mk.x), y1: m.t, y2: m.t + ih, stroke: cssv('--ink-2'), 'stroke-dasharray': '4 4', 'stroke-width': 1 }, svg);
+      const anchorEnd = x(mk.x) > m.l + iw * 0.62;
+      txt(svg, x(mk.x) + (anchorEnd ? -6 : 6), m.t + (mk.dy || 14), mk.label, 'mk-label', { 'text-anchor': anchorEnd ? 'end' : 'start' });
+    });
+    o.series.forEach(s => {
+      const d = s.values.map((v, i) => (i ? 'L' : 'M') + x(xs[i]).toFixed(1) + ',' + y(v).toFixed(1)).join('');
+      el('path', { d, fill: 'none', stroke: cssv(s.color), 'stroke-width': 2.5, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, svg);
+      if (o.series.length > 1) txt(svg, m.l + iw + 8, y(s.values[s.values.length - 1]) + 4, s.name, 'series-label');
+    });
+    (o.points || []).forEach(p => {
+      el('circle', { cx: x(p.x), cy: y(p.y), r: 6, fill: cssv(p.color), stroke: cssv('--surface'), 'stroke-width': 2 }, svg);
+      if (p.label) txt(svg, x(p.x) + (p.dx || 0), y(p.y) + (p.dy || -12), p.label, 'mk-label', { 'text-anchor': p.anchor || 'middle' });
+    });
+    const hover = el('g', { opacity: 0 }, svg);
+    const vl = el('line', { y1: m.t, y2: m.t + ih, stroke: cssv('--ink-2'), 'stroke-width': 1 }, hover);
+    const dots = o.series.map(s => el('circle', { r: 5, fill: cssv(s.color), stroke: cssv('--surface'), 'stroke-width': 2 }, hover));
+    const hit = el('rect', { x: m.l - 10, y: 0, width: iw + 20, height: H, fill: 'transparent', style: 'cursor:crosshair' }, svg);
+    const move = ev => {
+      const r = svg.getBoundingClientRect();
+      let i = Math.round((ev.clientX - r.left - m.l) / iw * (xs.length - 1));
+      i = Math.max(0, Math.min(xs.length - 1, i));
+      const cx = x(xs[i]);
+      vl.setAttribute('x1', cx); vl.setAttribute('x2', cx);
+      o.series.forEach((s, k) => { dots[k].setAttribute('cx', cx); dots[k].setAttribute('cy', y(s.values[i])); });
+      hover.setAttribute('opacity', 1);
+      showTip(box, o.tipFmt(i), cx, Math.min(...o.series.map(s => y(s.values[i]))));
+    };
+    hit.addEventListener('pointermove', move);
+    hit.addEventListener('pointerdown', move);
+    hit.addEventListener('pointerleave', () => { hover.setAttribute('opacity', 0); hideTip(box); });
+  }
+
+  /* ---------------- bar charts ---------------- */
+  const topRounded = (x, y, w, h, r) => { r = Math.min(r, h, w / 2); return `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`; };
+  const botRounded = (x, y, w, h, r) => { r = Math.min(r, h, w / 2); return `M${x},${y}H${x + w}V${y + h - r}Q${x + w},${y + h} ${x + w - r},${y + h}H${x + r}Q${x},${y + h} ${x},${y + h - r}Z`; };
+
+  function stackChart(box) {
+    box.querySelector('svg')?.remove();
+    const W = box.clientWidth, H = 330, narrow = W < 560;
+    const m = { t: 30, r: narrow ? 8 : 118, b: 34, l: narrow ? 46 : 58 };
+    const svg = el('svg', { width: W, height: H, role: 'img', 'aria-label': box.dataset.label });
+    box.prepend(svg);
+    const iw = W - m.l - m.r, ih = H - m.t - m.b, yMax = 20000;
+    const y = v => m.t + (1 - v / yMax) * ih;
+    for (let v = 0; v <= yMax; v += 5000) {
+      el('line', { x1: m.l, x2: m.l + iw, y1: y(v), y2: y(v), stroke: v === 0 ? cssv('--axis') : cssv('--grid'), 'stroke-width': v === 0 ? 1.5 : 1 }, svg);
+      txt(svg, m.l - 8, y(v) + 4, nf(v), 'tick', { 'text-anchor': 'end' });
+    }
+    txt(svg, m.l - 8, m.t - 14, '万円', 'unit', { 'text-anchor': 'end' });
+    const band = iw / years.length, bw = Math.min(64, band * 0.56);
+    years.forEach((yr, i) => {
+      const cx = m.l + band * i + band / 2, x0 = cx - bw / 2;
+      let acc = 0;
+      const segs = fiveY.map((s, k) => ({ s, k, v: s.v[i] })).filter(d => d.v > 0);
+      segs.forEach((d, j) => {
+        const y1 = y(acc + d.v), y0 = y(acc);
+        const isTop = j === segs.length - 1;
+        const h = Math.max(0, y0 - y1 - (isTop ? 0 : 2));
+        const p = el('path', { d: isTop ? topRounded(x0, y1, bw, h, 4) : `M${x0},${y1 + 2}h${bw}v${h}h${-bw}Z`, fill: cssv(d.s.color) }, svg);
+        if (!isTop) p.setAttribute('d', `M${x0},${y1 + 2}h${bw}v${Math.max(0, y0 - y1 - 2)}h${-bw}Z`);
+        acc += d.v;
+        if (!narrow && i === years.length - 1) txt(svg, x0 + bw + 10, (y1 + y0) / 2 + 4, d.s.name, 'val-sub');
+      });
+      txt(svg, cx, y(totals[i]) - 8, oku(totals[i]), 'val', { 'text-anchor': 'middle' });
+      txt(svg, cx, m.t + ih + 22, yr + '年', 'tick', { 'text-anchor': 'middle' });
+      const hit = el('rect', { x: cx - band / 2, y: m.t, width: band, height: ih, fill: 'transparent' }, svg);
+      const show = () => {
+        const html = `<b>${yr}年</b>` + fiveY.slice().reverse().map(s => row(cssv(s.color), s.name, nf(s.v[i]) + '万円')).join('') + row('', '<b>合計</b>', oku(totals[i]));
+        showTip(box, html, cx + bw / 2, y(totals[i]));
+      };
+      hit.addEventListener('pointerenter', show); hit.addEventListener('pointerdown', show);
+      hit.addEventListener('pointerleave', () => hideTip(box));
+    });
+  }
+
+  function profitChart(box) {
+    box.querySelector('svg')?.remove();
+    const W = box.clientWidth, H = 220, narrow = W < 560;
+    const m = { t: 24, r: narrow ? 8 : 118, b: 34, l: narrow ? 46 : 58 };
+    const svg = el('svg', { width: W, height: H, role: 'img', 'aria-label': box.dataset.label });
+    box.prepend(svg);
+    const iw = W - m.l - m.r, ih = H - m.t - m.b, yMin = -400, yMax = 1600;
+    const y = v => m.t + (1 - (v - yMin) / (yMax - yMin)) * ih;
+    for (let v = yMin; v <= yMax; v += 400) {
+      el('line', { x1: m.l, x2: m.l + iw, y1: y(v), y2: y(v), stroke: v === 0 ? cssv('--axis') : cssv('--grid'), 'stroke-width': v === 0 ? 1.5 : 1 }, svg);
+      txt(svg, m.l - 8, y(v) + 4, nf(v), 'tick', { 'text-anchor': 'end' });
+    }
+    txt(svg, m.l - 8, m.t - 10, '万円', 'unit', { 'text-anchor': 'end' });
+    const band = iw / years.length, bw = Math.min(64, band * 0.56);
+    profit.forEach((v, i) => {
+      const cx = m.l + band * i + band / 2, x0 = cx - bw / 2;
+      const pos = v >= 0, h = Math.abs(y(v) - y(0));
+      el('path', { d: pos ? topRounded(x0, y(v), bw, h, 4) : botRounded(x0, y(0), bw, h, 4), fill: cssv(pos ? '--pos' : '--neg') }, svg);
+      txt(svg, cx, pos ? y(v) - 8 : y(v) + 16, manS(v), 'val', { 'text-anchor': 'middle' });
+      txt(svg, cx, m.t + ih + 22, years[i] + '年', 'tick', { 'text-anchor': 'middle' });
+      const hit = el('rect', { x: cx - band / 2, y: m.t, width: band, height: ih, fill: 'transparent' }, svg);
+      const show = () => showTip(box, `<b>${years[i]}年</b>` + row(cssv(pos ? '--pos' : '--neg'), '営業利益', manS(v)) + row('', '売上', oku(totals[i])), cx + bw / 2, Math.min(y(v), y(0)));
+      hit.addEventListener('pointerenter', show); hit.addEventListener('pointerdown', show);
+      hit.addEventListener('pointerleave', () => hideTip(box));
+    });
+  }
+
+  /* ---------------- html bars ---------------- */
+  function hbars(id, rows, color) {
+    const max = Math.max(...rows.map(r => r[2]));
+    $(id).innerHTML = rows.map(r => `<div class="hbar${r[3] ? ' muted' : ''}"><div class="lb">${r[0]}<small>${r[1]}</small></div><div class="tr"><span style="width:${(r[2] / max * 100).toFixed(1)}%;${color && !r[3] ? 'background:var(' + color + ')' : ''}"></span></div><div class="vl">${nf(r[2])}万円</div></div>`).join('');
+  }
+  hbars('#invBars', [
+    ['内装工事', '約10坪 × 坪60万円', 600],
+    ['運転資金', '固定費の約3か月分（もしもの備え）', 450, true],
+    ['物件の取得', '保証金300万＋礼金・仲介60万', 360],
+    ['厨房機器・設備', '製氷機・冷蔵庫・浄水器・レジなど', 300],
+    ['開業準備', 'ロゴ・Web・試作・採用・研修', 150],
+    ['最初の仕入れ', '茶葉・ボトル・カップ', 100],
+  ]);
+  hbars('#fundBars', [
+    ['日本政策金融公庫（創業融資）', '借入れ・7年返済を想定（61%）', 1200],
+    ['自己資金', '自分で用意するお金（26%）', 500],
+    ['クラウドファンディング', 'ボトルの先行販売・手数料差引後（10%）', 200],
+    ['補助金', '採択されれば・後払い（3%）', 60, true],
+  ]);
+
+  /* ---------------- tables for charts ---------------- */
+  const bepXs = []; for (let c = 60; c <= 260; c += 5) bepXs.push(c);
+  $('#tblBep').innerHTML = '<thead><tr><th class="num">1日の客数</th><th class="num">月の売上</th><th class="num">月のコスト合計</th><th class="num">営業利益</th></tr></thead><tbody>' +
+    [80, 100, 120, 140, 160, 180, 200, 220, 250].map(c => `<tr${c === 180 ? ' class="me"' : ''}><td class="num">${c}人</td><td class="num">${man(salesAt(c))}</td><td class="num">${man(costAt(c))}</td><td class="num">${manS(salesAt(c) - costAt(c))}</td></tr>`).join('') + '</tbody>';
+  $('#tblJ').innerHTML = '<thead><tr><th>時期</th><th class="num">月の売上</th><th class="num">累計の手元資金</th></tr></thead><tbody>' +
+    [0, 1, 3, 6, 12, 18, 24, payback, 30, 36].filter((v, i, a) => a.indexOf(v) === i).sort((a, b) => a - b).map(mm => `<tr${mm === payback ? ' class="me"' : ''}><td>${mm === 0 ? '開業時（2027年5月）' : monthLabel(mm) + '（' + mm + 'か月目）'}</td><td class="num">${mm === 0 ? '—' : nf(monthSales(mm)) + '万円'}</td><td class="num">${man(jcurve[mm])}</td></tr>`).join('') + '</tbody>';
+  $('#tbl5y').innerHTML = '<thead><tr><th>事業</th>' + years.map(y => `<th class="num">${y}年</th>`).join('') + '</tr></thead><tbody>' +
+    fiveY.map(s => `<tr><td>${s.name}</td>${s.v.map(v => `<td class="num">${nf(v)}</td>`).join('')}</tr>`).join('') +
+    `<tr class="total"><td>売上合計</td>${totals.map(v => `<td class="num">${nf(v)}</td>`).join('')}</tr>` +
+    `<tr><td>営業利益</td>${profit.map(v => `<td class="num">${(v < 0 ? '−' : '') + nf(Math.abs(v))}</td>`).join('')}</tr></tbody>`;
+  $('#tbl5y').insertAdjacentHTML('afterend', '<p class="note" style="margin:6px 0 0">単位：万円</p>');
+
+  /* ---------------- render charts ---------------- */
+  function renderCharts() {
+    if ($('#chartBep').clientWidth < 120) return;
+    const nar = $('#chartBep').clientWidth < 520;
+    lineChart($('#chartBep'), {
+      xs: bepXs, yMin: 0, yMax: 500, yStep: 100, yUnit: '万円/月', height: 320,
+      xTicks: nar ? [60, 110, 160, 210, 260] : [60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260], xFmt: v => v + '人',
+      bands: [{ from: 60, to: BEP, fill: '--neg-wash', label: '赤字', ink: '--neg' }, { from: BEP, to: 260, fill: '--pos-wash', label: '黒字', ink: '--pos' }],
+      markers: [{ x: BEP, label: '黒字ライン 約140人', dy: 14 }, { x: 180, label: '目標 180人', dy: 32 }],
+      series: [{ name: '売上', color: '--s1', values: bepXs.map(salesAt) }, { name: 'コスト合計', color: '--s3', values: bepXs.map(costAt) }],
+      tipFmt: i => { const c = bepXs[i], s = salesAt(c), k = costAt(c); return `<b>1日 ${c}人のとき</b>` + row(cssv('--s1'), '売上', man(s)) + row(cssv('--s3'), 'コスト合計', man(k)) + row('', s >= k ? '利益' : '赤字', manS(s - k)); }
+    });
+    const jx = jcurve.map((_, i) => i);
+    lineChart($('#chartJ'), {
+      xs: jx, yMin: -1600, yMax: 800, yStep: 400, yUnit: '万円', height: 300,
+      xTicks: [0, 6, 12, 18, 24, 30, 36], xFmt: v => v === 0 ? '開業' : v + 'か月',
+      series: [{ name: '累計', color: '--s1', values: jcurve }],
+      points: [{ x: payback, y: jcurve[payback], color: '--s1', label: '投資回収 ' + payback + 'か月目', dy: -14, anchor: 'end', dx: 0 }],
+      tipFmt: i => `<b>${i === 0 ? '開業時（2027年5月）' : monthLabel(i) + '（' + i + 'か月目）'}</b>` + row(cssv('--s1'), '累計の手元資金', man(jcurve[i])) + (i ? row('', 'その月の売上', nf(monthSales(i)) + '万円') : '')
+    });
+    stackChart($('#chart5y'));
+    profitChart($('#chartProfit'));
+  }
+
+  /* ---------------- gantt ---------------- */
+  const G = [
+    { ph: 'フェーズ0　準備と検証', c: '--s0', from: '2026-12', to: '2027-05' },
+    { l: '屋号・商標を決める', c: '--s0', from: '2026-12', to: '2027-01' },
+    { l: 'お客さま30人にインタビュー', c: '--s0', from: '2026-12', to: '2027-01' },
+    { l: 'メニュー試作・原価計算', c: '--s0', from: '2026-12', to: '2027-02' },
+    { l: '融資の相談・申込み', c: '--s0', from: '2027-01', to: '2027-03' },
+    { l: '物件の交渉・契約', c: '--s0', from: '2027-01', to: '2027-03' },
+    { l: 'ポップアップでテスト販売', c: '--s0', from: '2027-02', to: '2027-04' },
+    { l: 'クラファン（ボトル先行販売）', c: '--s0', from: '2027-03', to: '2027-04' },
+    { l: '内装工事・営業許可', c: '--s0', from: '2027-04', to: '2027-05' },
+    { l: '採用・研修・プレオープン', c: '--s0', from: '2027-04', to: '2027-05' },
+    { ph: 'フェーズ1　押上1号店', c: '--s1', from: '2027-06', to: '2028-12' },
+    { ms: '1号店オープン', c: '--s1', at: '2027-06' },
+    { l: '1号店の運営・改善', c: '--s1', from: '2027-06', to: '2031-12' },
+    { l: 'ベーグル屋さんとのコラボ定番化', c: '--s1', from: '2027-07', to: '2027-12' },
+    { ms: '毎月黒字が定着', c: '--s1', at: '2027-10' },
+    { l: 'マイボトル会員づくり', c: '--s1', from: '2027-06', to: '2028-12' },
+    { ms: '1号店の投資回収', c: '--s1', at: '2029-06' },
+    { ph: '通販・会社向けの販売', c: '--s3', from: '2028-04', to: '2031-12' },
+    { l: '通販・茶葉の定期便', c: '--s3', from: '2028-04', to: '2031-12' },
+    { l: 'オフィス向けの販売', c: '--s3', from: '2028-10', to: '2031-12' },
+    { ph: 'フェーズ2　都内に広げる', c: '--s2', from: '2028-07', to: '2031-12' },
+    { l: '2号店の場所選び', c: '--s2', from: '2028-07', to: '2028-12' },
+    { l: '2号店の準備', c: '--s2', from: '2029-01', to: '2029-03' },
+    { ms: '2号店オープン', c: '--s2', at: '2029-04' },
+    { l: '3号店の場所選び・準備', c: '--s2', from: '2030-07', to: '2031-03' },
+    { ms: '3号店オープン', c: '--s2', at: '2031-04' },
+    { ph: 'フェーズ3　夜とクルマの市場へ', c: '--s4', from: '2028-07', to: '2031-12' },
+    { l: '夜のキッチンカーで需要を試す', c: '--s4', from: '2028-07', to: '2029-12' },
+    { l: 'ドライブスルーの候補地選び', c: '--s4', from: '2029-06', to: '2029-10' },
+    { l: '設計・許認可・建設', c: '--s4', from: '2029-10', to: '2030-03' },
+    { ms: 'ドライブスルー1号店オープン', c: '--s4', at: '2030-04' },
+    { l: '24時間にするかの判断', c: '--s4', from: '2030-07', to: '2030-09' },
+    { ms: '24時間営業スタート（条件つき）', c: '--s4', at: '2030-10' },
+    { l: 'ドライブスルー2号店の検討', c: '--s4', from: '2031-04', to: '2031-12' },
+  ];
+  const START = { y: 2026, m: 11 };
+  const mi = s => { const [y, m] = s.split('-').map(Number); return (y - START.y) * 12 + (m - START.m); };
+  const TOTAL = mi('2031-12') + 1;
+  const pct = v => (v / TOTAL * 100).toFixed(3) + '%';
+  const ym = s => { const [y, m] = s.split('-').map(Number); return y + '年' + m + '月'; };
+  const ymShort = s => { const [y, m] = s.split('-').map(Number); return y + '/' + m; };
+  function renderGantt() {
+    const g = $('#gantt');
+    let h = '<div class="g-grid" aria-hidden="true">';
+    for (let i = 0; i <= TOTAL; i++) {
+      const mon = (START.m - 1 + i) % 12 + 1;
+      if (mon === 1) h += `<div class="yl" style="left:${pct(i)}"></div>`;
+      else if (mon === 4 || mon === 7 || mon === 10) h += `<div class="ql" style="left:${pct(i)}"></div>`;
+    }
+    h += `<div class="today" style="left:${pct(14 / 30)}"></div></div>`;
+    // header
+    h += '<div class="g-row g-head" role="row" style="min-height:48px"><div class="g-lab" role="columnheader">項目</div><div class="g-track">';
+    for (let y = 2026; y <= 2031; y++) {
+      const a = Math.max(0, mi(y + '-01')), b = mi((y + 1) + '-01');
+      if (y > 2026) h += `<div class="g-yr" style="left:${pct(a)};width:${pct(Math.min(TOTAL, b) - a)}">${y}年</div>`;
+      for (let q = 0; q < 4; q++) {
+        const qa = mi(y + '-' + String(q * 3 + 1).padStart(2, '0')), qb = qa + 3;
+        const s = Math.max(0, qa), e = Math.min(TOTAL, qb);
+        if (e - s >= 3) h += `<div class="g-q" style="left:${pct(s)};width:${pct(e - s)}">${q + 1}Q</div>`;
+      }
+    }
+    h += `<div class="g-today-h" style="left:${pct(14 / 30)}">今日</div></div></div>`;
+    G.forEach(r => {
+      if (r.ph) {
+        h += `<div class="g-row g-phase" role="row"><div class="g-lab" role="rowheader"><span class="chip" style="background:var(${r.c})"></span>${r.ph}</div><div class="g-track"><div class="g-span" style="left:${pct(mi(r.from))};width:${pct(mi(r.to) - mi(r.from) + 1)};background:var(${r.c})"></div></div></div>`;
+      } else if (r.ms) {
+        const a = mi(r.at), right = a / TOTAL > 0.72;
+        h += `<div class="g-row g-ms-row" role="row"><div class="g-lab" role="rowheader">◆ ${r.ms}</div><div class="g-track"><div class="g-ms" style="left:${pct(a)};background:var(${r.c})" title="${r.ms}：${ym(r.at)}"></div><div class="g-ms-l" style="${right ? 'right:calc(' + (100 - a / TOTAL * 100).toFixed(3) + '% + 14px)' : 'left:calc(' + pct(a) + ' + 14px)'}">${ym(r.at)}</div></div></div>`;
+      } else {
+        const a = mi(r.from), b = mi(r.to) + 1, w = (b - a) / TOTAL;
+        const period = ymShort(r.from) + (r.from === r.to ? '' : '–' + ymShort(r.to));
+        const inside = w > 0.16, nearEnd = b / TOTAL > 0.85;
+        const dark = r.c === '--s2' ? ' dark-ink' : '';
+        const label = inside ? period : `<span class="out${nearEnd ? ' left' : ''}">${period}</span>`;
+        h += `<div class="g-row" role="row"><div class="g-lab" role="rowheader">${r.l}</div><div class="g-track"><div class="g-bar${dark}" style="left:${pct(a)};width:${pct(b - a)};background:var(${r.c})" title="${r.l}：${ym(r.from)}〜${ym(r.to)}">${label}</div></div></div>`;
+      }
+    });
+    g.innerHTML = h;
+  }
+  renderGantt();
+
+  /* ---------------- glossary ---------------- */
+  const GL = [
+    ['戦略・計画', [
+      ['shinki', '新規事業', '', 'これまでやっていなかった新しい商売を立ち上げること。'],
+      ['keikaku', '事業計画書', '', '「何を・誰に・どう売り、いくらもうけるか」をまとめた設計図。銀行や仲間に説明するときにも使う。この資料のこと。'],
+      ['vision', 'ビジョン', '', '将来こうなりたい、という目指す姿。茶々○園なら「日本茶で第二のスタバになる」。'],
+      ['concept', 'コンセプト', '', 'お店や商品を「ひとことで言うと何か」。迷ったときに立ち返る軸。'],
+      ['persona', 'ペルソナ', '', '典型的なお客さまを、名前・年齢・暮らしぶりまで具体的に描いた架空の人物像。誰のための店かをチームでそろえるために使う。'],
+      ['position', 'ポジショニング', 'ポジショニングマップ', '競合とくらべて、自分たちがどの位置（すき間）を取るかを決めること。2本の軸で図にしたものをポジショニングマップという。'],
+      ['kyogo', '競合', '', '同じお客さまを取り合う相手。同じ業種だけでなく、コンビニのペットボトル茶なども含む。'],
+      ['sabetsu', '差別化', '', '競合にはない「選ばれる理由」をつくること。'],
+      ['third', 'サードプレイス', '', '家（1番目）でも職場（2番目）でもない、くつろげる「3番目の居場所」。スターバックスが大切にしてきた考え方として知られる。'],
+      ['inbound', 'インバウンド', '訪日外国人', '海外から日本に来る旅行者のこと。またはその人たちに向けた商売。'],
+      ['mvp', 'テスト販売', 'MVP', '本格的にお金をかける前に、最小限の形で売ってみて反応を確かめること。MVPは「必要最小限の製品（Minimum Viable Product）」の略。'],
+      ['popup', 'ポップアップ出店', '', 'イベント会場や空き店舗などで、期間限定でお店を出すこと。少ない費用でテスト販売ができる。'],
+      ['pmf', 'PMF', 'プロダクト・マーケット・フィット', '商品が市場にぴったり合った状態。お客さまが自然にくり返し買い、口コミで広がっていく段階のこと。'],
+      ['phase', 'フェーズ', '', '計画の段階。「準備 → 1号店 → 拡大」のように区切って進める。'],
+      ['roadmap', 'ロードマップ', '', 'いつ、何をするかを時間の順に並べた行程表。'],
+      ['gantt', 'ガントチャート', '', '横軸を時間にして、それぞれの作業の期間を横棒で表した工程表。作業の重なりや順番がひと目で分かる。'],
+      ['milestone', 'マイルストーン', '', '計画のなかの大事な節目（例：オープン日）。図では◆で表している。'],
+      ['tettai', '撤退基準', '', '「この数字を下回ったら計画を見直す・やめる」と、事前に決めておくライン。損失が大きくなる前に冷静に判断するための保険。'],
+      ['kpi', 'KPI', '重要業績評価指標', '目標に近づいているかを測るための数字。例：1日の客数、客単価。'],
+      ['tatenpo', '多店舗展開', '', '1店舗でつくった成功パターンを、2店舗目以降に広げていくこと。'],
+      ['fc', 'フランチャイズ', '', '本部の店名やノウハウを使う権利を、加盟店にお金をもらって提供する仕組み。'],
+    ]],
+    ['お金', [
+      ['uriage', '売上', '売上高', 'お客さまから受け取ったお金の合計。'],
+      ['nippan', '日販', '', '1日あたりの売上。'],
+      ['kyakusu', '客数', '', '来店して買ってくれたお客さまの人数。'],
+      ['tanka', '客単価', '', 'お客さま1人あたりの平均の支払い額。「売上＝客数×客単価」。'],
+      ['genka', '原価', '原価率', '商品をつくるのにかかった材料費（茶葉・牛乳・カップなど）。売上に対する割合を原価率という。'],
+      ['arari', '粗利', '', '売上から原価を引いた残り。ここから家賃や人件費を払う。'],
+      ['jinken', '人件費', '', 'スタッフの給料や社会保険料など、人にかかる費用。'],
+      ['fl', 'FL比率', '', '原価（Food）と人件費（Labor）を足した金額が、売上に占める割合。飲食店では60%前後が目安とされる。'],
+      ['kotei', '固定費', '', '売上が増えても減っても、毎月ほぼ同じだけかかる費用（家賃・社員の給料など）。'],
+      ['hendo', '変動費', '', '売上に比例して増える費用（材料費・カード決済の手数料など）。'],
+      ['eigyorieki', '営業利益', '', '本業でのもうけ。売上から原価とすべての経費を引いた残り。'],
+      ['bep', '損益分岐点', '黒字ライン', '売上とコストがちょうど同じになる点。ここを超えると黒字、下回ると赤字。'],
+      ['anzen', '安全余裕率', '', '今の売上が、損益分岐点からどれだけ上にあるかの割合。大きいほど赤字になりにくい。標準ケースでは約21%。'],
+      ['genkashokyaku', '減価償却', '', '内装や機械など長く使う物の購入費を、使う年数に分けて少しずつ費用にする会計のルール。'],
+      ['shoki', '初期投資', '', 'お店を開くまでに必要なお金（内装・設備・保証金など）。'],
+      ['hoshokin', '保証金', '敷金', '物件を借りるときに大家さんに預けるお金。退去するときに一部が返ってくる。'],
+      ['unten', '運転資金', '', '毎月の支払い（給料・家賃・仕入れ）を回すために、手元に置いておくお金。'],
+      ['cashflow', 'キャッシュフロー', '', '実際に入ってきたお金と、出ていったお金の流れ。'],
+      ['kaishu', '投資回収', '投資回収期間', '最初に使ったお金を、毎月のもうけで取り戻すこと。取り戻すまでの期間を投資回収期間という。'],
+      ['jcurve', 'Jカーブ', '', '開業直後はお金が出ていってマイナスが深くなり、やがて回復してプラスに転じる、累計の手元資金の形。アルファベットのJに似ている。'],
+      ['jfc', '日本政策金融公庫', '', '国が100%出資している金融機関。これから開業する人へのお金の貸し出し（創業融資）に力を入れている。'],
+      ['sogyo', '創業融資', '', 'これから事業を始める人向けの借入れ。'],
+      ['hojokin', '補助金', '', '国や自治体が、条件を満たした事業の費用の一部を出してくれる制度。原則として返さなくてよいが、後払いで審査がある。'],
+      ['cf', 'クラウドファンディング', '', 'インターネットで、多くの人から少しずつお金を集める仕組み。商品の先行販売の形にすれば、「欲しい人がいるか」の確認にもなる。'],
+    ]],
+    ['マーケティング', [
+      ['marketing', 'マーケティング', '', '「売れる仕組み」をつくる活動全体。商品づくり、値段、宣伝、売り場まで含む。'],
+      ['branding', 'ブランディング', '', '「茶々○園といえば〇〇」というイメージを、お客さまの頭の中に育てていくこと。'],
+      ['tagline', 'タグライン', '', 'ブランドの考えを短く表したキャッチコピー。茶々○園なら「日本人よ、日本茶を飲め。」'],
+      ['sns', 'SNS', '', 'Instagram、TikTok、X（旧Twitter）などの、人と人がつながる交流サイト。'],
+      ['ugc', 'UGC', '', 'お客さまが自分から投稿する写真や口コミ（User Generated Content）。広告よりも信頼されやすい。'],
+      ['meo', 'MEO', 'Googleマップ対策', 'Googleマップで検索したときに、お店が見つかりやすくなるようにする工夫。写真・営業時間・口コミへの返信などを整える。'],
+      ['journey', 'カスタマージャーニー', '', 'お客さまが「知る → 来る → 好きになる → また来る → 広める」と進む道のりを描いたもの。段階ごとに打ち手を考える。'],
+      ['repeat', 'リピート率', '', '一度来たお客さまが、もう一度来てくれる割合。'],
+      ['ltv', 'LTV', '顧客生涯価値', '1人のお客さまが、お付き合いの全期間で使ってくれる金額の合計。常連さんほど大きくなる。'],
+      ['member', '会員プログラム', '', 'マイボトルやLINEで常連さんを登録し、特典で再来店をうながす仕組み。'],
+      ['subsc', 'サブスク', '定期便', '毎月決まった金額で、商品が定期的に届く仕組み。'],
+      ['ec', 'EC', '', 'インターネット通販のこと。'],
+      ['oroshi', '会社向けの販売', '法人卸', '会社などにまとめて商品を売ること。例：オフィスの休憩室向けの茶葉。'],
+      ['collab', '相互送客', 'コラボ', 'ほかのお店と組んで、お互いのお客さまを紹介し合うこと。'],
+      ['presale', '先行販売', '', '発売前に予約の形で販売すること。'],
+    ]],
+    ['お店の運営', [
+      ['ope', 'オペレーション', '', 'お店を回す日々の作業の手順（注文 → 提供 → 片付けなど）。'],
+      ['peak', 'ピークタイム', '', 'お客さまが集中する時間帯。'],
+      ['mizudashi', '水出し', '', '熱湯ではなく水で、数時間かけてゆっくり抽出するお茶。苦みが出にくく、まろやかになる。'],
+      ['mybottle', 'マイボトル', '専用ボトル', 'お客さまが持ってくるボトル。茶々○園では専用ボトルを販売し、持参するとお茶を安く注ぐ。使い捨てカップのごみも減らせる。'],
+      ['refill', 'リフィル', '', 'マイボトルにおかわりを注いで販売すること。'],
+      ['mobile', 'モバイルオーダー', '事前注文', 'スマホで先に注文と支払いを済ませ、お店では受け取るだけにする仕組み。'],
+      ['cashless', 'キャッシュレス決済', '', 'クレジットカード、電子マネー、QRコードなど、現金以外での支払い。'],
+      ['pos', 'POSレジ', '', '売れた商品と時間をその場で記録・集計するレジ。何が何時に売れたかが分かる。'],
+      ['dt', 'ドライブスルー', '', '車に乗ったまま注文と受け取りができる販売方式。'],
+      ['kitchencar', 'キッチンカー', '', '調理設備を積んだ車で営業する移動販売。場所を変えながら需要を試せる。'],
+      ['container', 'コンテナ型店舗', '', '輸送用のコンテナなどを使った小さな建物のお店。建設費と工事期間を抑えやすい。'],
+      ['eisei', '食品衛生責任者', '', '飲食店に必ず1人置く、衛生管理の担当者。1日の講習会で資格が取れる。'],
+      ['kyoka', '飲食店営業許可', '', '飲食物を提供するために、保健所から受ける許可。'],
+      ['shohyo', '商標', '', 'お店の名前やロゴを、他人に勝手に使われないよう特許庁に登録して守る権利。'],
+      ['shinya', '深夜割増', '', '夜22時〜朝5時に働く人へ、通常の時給に25%以上を上乗せして払う法律上のルール。'],
+    ]],
+    ['IT・その他', [
+      ['github', 'GitHub', 'ギットハブ', 'プログラムや文書を保存・共有・管理するためのWebサービス。'],
+      ['ghpages', 'GitHub Pages', '', 'GitHubに置いたファイルを、そのままWebページとして無料で公開できる機能。このページもこれで公開している。'],
+      ['url', 'URL', '', 'Webページの住所。「https://」から始まる文字列。'],
+      ['yougo', '用語リンク', '', 'このページで点線の下線がついた言葉。カーソルを合わせると意味が表示され、クリックするとこの用語集に移動する。'],
+    ]],
+  ];
+  const catsEl = $('#glCats'), bodyEl = $('#glBody');
+  bodyEl.innerHTML = GL.map(([cat, items]) => `<div class="gl-group" data-cat="${cat}"><h3>${cat}<span class="pill" style="margin-left:4px">${items.length}語</span></h3><dl class="gl">` +
+    items.map(([id, term, alt, def, idOverride]) => `<div class="gi" id="g-${idOverride || id}" data-s="${(term + alt + def).toLowerCase()}"><dt>${term}${alt ? `<small>${alt}</small>` : ''}</dt><dd>${def}</dd></div>`).join('') + '</dl></div>').join('');
+  const allCats = ['すべて', ...GL.map(g => g[0])];
+  let curCat = 'すべて';
+  catsEl.innerHTML = allCats.map(c => `<button type="button" class="${c === curCat ? 'on' : ''}" data-c="${c}">${c}</button>`).join('');
+  function filterGl() {
+    const q = $('#glSearch').value.trim().toLowerCase();
+    let any = false;
+    $$('.gl-group').forEach(gr => {
+      let n = 0;
+      const catOk = curCat === 'すべて' || gr.dataset.cat === curCat;
+      $$('.gi', gr).forEach(it => { const ok = catOk && (!q || it.dataset.s.includes(q)); it.style.display = ok ? '' : 'none'; if (ok) n++; });
+      gr.style.display = n ? '' : 'none'; if (n) any = true;
+    });
+    $('#glEmpty').style.display = any ? 'none' : 'block';
+  }
+  catsEl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; curCat = b.dataset.c; $$('button', catsEl).forEach(x => x.classList.toggle('on', x === b)); filterGl(); });
+  $('#glSearch').addEventListener('input', filterGl);
+
+  /* ---------------- term tooltips + back button ---------------- */
+  const tip = $('#termTip'), back = $('#backBtn');
+  let savedY = null;
+  $$('a.t').forEach(a => {
+    const target = document.getElementById(a.getAttribute('href').slice(1));
+    if (!target) return;
+    const term = target.querySelector('dt')?.childNodes[0]?.textContent || '';
+    const def = target.querySelector('dd')?.textContent || '';
+    a.setAttribute('aria-describedby', 'termTip');
+    const show = () => {
+      tip.innerHTML = `<b>${term}</b>${def}<i>クリックで用語集へ</i>`;
+      const r = a.getBoundingClientRect();
+      tip.style.opacity = 1;
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      let left = Math.min(window.innerWidth - tw - 12, Math.max(12, r.left + r.width / 2 - tw / 2));
+      let top = r.top - th - 10; if (top < 64) top = r.bottom + 10;
+      tip.style.left = left + 'px'; tip.style.top = top + 'px';
+    };
+    const hide = () => { tip.style.opacity = 0; };
+    a.addEventListener('mouseenter', show); a.addEventListener('focus', show);
+    a.addEventListener('mouseleave', hide); a.addEventListener('blur', hide);
+    a.addEventListener('click', () => {
+      hide();
+      if (!a.closest('#glossary')) { savedY = window.scrollY; back.style.display = 'block'; }
+      curCat = 'すべて'; $('#glSearch').value = ''; $$('button', catsEl).forEach(x => x.classList.toggle('on', x.dataset.c === 'すべて')); filterGl();
+      target.classList.remove('flash'); void target.offsetWidth; target.classList.add('flash');
+      setTimeout(() => target.classList.remove('flash'), 2400);
+    });
+  });
+  back.addEventListener('click', () => { if (savedY !== null) window.scrollTo({ top: savedY, behavior: 'smooth' }); back.style.display = 'none'; savedY = null; });
+  window.addEventListener('scroll', () => { tip.style.opacity = 0; }, { passive: true });
+
+  /* ---------------- checklist (per-viewer, optional) ---------------- */
+  const KEY = 'chachaen-checklist-v1';
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+  $$('#checklist input').forEach(cb => {
+    cb.checked = !!saved[cb.dataset.k];
+    cb.addEventListener('change', () => { saved[cb.dataset.k] = cb.checked; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) { } });
+  });
+
+  /* ---------------- toc ---------------- */
+  const toc = $('#toc'), tocBtn = $('#tocBtn');
+  tocBtn.addEventListener('click', () => { const o = toc.classList.toggle('open'); tocBtn.setAttribute('aria-expanded', o); });
+  $$('a', toc).forEach(a => a.addEventListener('click', () => { toc.classList.remove('open'); tocBtn.setAttribute('aria-expanded', false); }));
+  const links = new Map($$('a', toc).map(a => [a.getAttribute('href').slice(1), a]));
+  const secs = $$('main .sec');
+  const prog = $('#progress');
+  const onScroll = () => {
+    const y = window.scrollY + 120;
+    let cur = secs[0];
+    secs.forEach(s => { if (s.offsetTop <= y) cur = s; });
+    links.forEach((a, id) => a.classList.toggle('on', id === cur.id));
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    prog.style.width = (max > 0 ? window.scrollY / max * 100 : 0) + '%';
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------- render & re-render ---------------- */
+  renderCharts();
+  let rt; const rerender = () => { clearTimeout(rt); rt = setTimeout(renderCharts, 120); };
+  if ('ResizeObserver' in window) { let lastW = $('#chartBep').clientWidth; new ResizeObserver(() => { const w = $('#chartBep').clientWidth; if (w !== lastW) { lastW = w; rerender(); } }).observe($('#chartBep')); }
+  else window.addEventListener('resize', rerender);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => { renderCharts(); });
+  document.fonts?.ready.then(renderCharts);
+})();
+</script>
+</body>
+</html>
